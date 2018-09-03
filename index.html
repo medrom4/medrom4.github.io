@@ -2,8 +2,10 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>JS</title>
+  <title>RESUME</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/stylefont.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -12,13 +14,40 @@
 
 <body>
 
+  <!-- Header -->
+
+  <header class="header header-hidden shadow-bg">
+    <div class="site-logo"><a href="http://junaidhira.com/demo/html/tile/index.html#0" class="animatescroll-link" onclick="$(&#39;html&#39;).animatescroll();">TILE</a></div>
+    <div class="menu-bar waves-effect waves-light"><span class="fa fa-bars"></span></div>
+  </header>
+
+  <!--/ Header -->
+
+
+  <!-- Nav Menu -->
+  <nav class="main-nav hidden hero-height" style="height: 714px;">
+    <div class="menu-close waves-effect waves-light"><span class="fa fa-times"></span></div>
+    <ul>
+      <li><a href="http://junaidhira.com/demo/html/tile/index.html#0" class="animatescroll-link" onclick="$(&#39;html&#39;).animatescroll();">Home</a></li>
+      <li><a href="http://junaidhira.com/demo/html/tile/index.html#0" class="education-section-nav animatescroll-link" onclick="$(&#39;#education-section&#39;).animatescroll();">Education</a></li>
+      <li><a href="http://junaidhira.com/demo/html/tile/index.html#0" class="portfolio-section-nav animatescroll-link" onclick="$(&#39;#portfolio-section&#39;).animatescroll();">Portfolio</a></li>
+      <li><a href="http://junaidhira.com/demo/html/tile/index.html#0" class="reference-section-nav animatescroll-link" onclick="$(&#39;#reference-section&#39;).animatescroll();">Reviews</a></li>
+      <li><a href="http://junaidhira.com/demo/html/tile/index.html#0" class="contact-section-nav animatescroll-link" onclick="$(&#39;#contact-section&#39;).animatescroll();">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--/ Nav Menu -->
+
   <!-- Top Section -->
-  <div class="site-header top-section top-section-home image-bg parallax-section" style="background: url('img/bg-1.jpg';) 50% 0px / cover no-repeat;">
+
+  <div class="site-header top-section top-section-home image-bg parallax-section" data-image-bg="img/bg/bg-1.jpg" style="background: url(&quot;img/bg-1.jpg&quot;) 50% 0px / cover no-repeat;">
     <div class="overlay-section"></div>
   </div>
+
   <!--/ Top Section -->
 
   <!-- About Section -->
+
   <section id="about-section" class="about-section">
     <div class="section-content">
       <div class="container">
@@ -51,7 +80,6 @@
               </div>
               <div class="about-social col s12 pd-0">
                 <a class="waves-effect waves-light" href="http://facebook.com/medikroma"><span class="fa fa-facebook"></span></a>
-                <a class="waves-effect waves-light" href="https://twitter.com/medikrom4"><span class="fa fa-twitter"></span></a>
                 <a class="waves-effect waves-light" href="https://plus.google.com/u/0/102790713323000982862"><span class="fa fa-google-plus"></span></a>
                 <a class="waves-effect waves-light" href="https://github.com/medrom4"><span class="fa fa-github"></span></a>
                 <a class="waves-effect waves-light" href="https://www.linkedin.com/feed/"><span class="fa fa-linkedin"></span></a>
@@ -62,10 +90,74 @@
       </div>
     </div>
   </section>
+
   <!--/ About Section -->
 
+
+
+  <!-- Contact Section -->
+  <section id="contact-section" class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 section-title">
+          <h2>Contact</h2>
+        </div>
+        <div class="col s12 pd-0 mgt-20">
+          <div class="col l5 s12 contact-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89443.71189140886!2d27.57013047725838!3d53.90694941694291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1535920688435" width="100%" height="100%" frameborder="0" style="border:0"
+                allowfullscreen></iframe>
+          </div>
+
+          <div class="col l7 s12 contact-form">
+            <div class="col s12 w-block shadow-bg pd-40">
+              <form id="c-form" class="c-form" action="http://junaidhira.com/demo/html/tile/index.html#0" method="post" data-email-address="mjunaidhira@gmail.com" autocomplete="off">
+                <fieldset>
+                  <input id="name" type="text" name="name" class="c-form-input" placeholder="Name">
+                  <input id="email" type="text" name="email" class="c-form-input" placeholder="Email">
+                  <input id="subject" type="text" name="subject" class="c-form-input" placeholder="Subject">
+                  <textarea id="message" name="message" class="c-form-input" placeholder="Message"></textarea>
+                  <button class="btn-custom waves-effect" type="submit" name="button">Send Message</button>
+                  <span id="c-form-spinner" class="fa fa-circle-o-notch "></span>
+                </fieldset>
+              </form>
+
+              <div class="c-form-alert hero-height" style="height: 714px;">
+                <div class="alert-content alert-attention w-block">
+                  <div class="alert-icon"><span class="fa fa-info-circle"></span></div>
+                  <div class="alert-title">Attention</div>
+                  <div class="alert-desc">
+                    <p>The name, subject and the message field must be at least 3 characters long. Make sure your email is valid too!</p>
+                  </div>
+                  <div class="alert-close"><a class="btn-custom waves-effect" href="http://junaidhira.com/demo/html/tile/index.html#0">Close Me</a></div>
+                </div>
+                <div class="alert-content alert-success w-block">
+                  <div class="alert-icon alert-icon-success"><span class="fa fa-check-circle"></span></div>
+                  <div class="alert-title">Success</div>
+                  <div class="alert-desc">
+                    <p>Your message has been received! Thank you for writing.</p>
+                  </div>
+                  <div class="alert-close"><a class="btn-custom waves-effect" href="http://junaidhira.com/demo/html/tile/index.html#0">Close Me</a></div>
+                </div>
+                <div class="alert-content alert-error w-block">
+                  <div class="alert-icon"><span class="fa fa-times-circle"></span></div>
+                  <div class="alert-title">Error</div>
+                  <div class="alert-desc">
+                    <p>Message couldn't be sent due to server problem.</p>
+                  </div>
+                  <div class="alert-close"><a class="btn-custom waves-effect" href="http://junaidhira.com/demo/html/tile/index.html#0">Close Me</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/ Contact Section -->
+
   <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-  
+
   <script type="text/javascript" src="js/wow.js"></script>
 
   <script type="text/javascript" src="js/parallax.js"></script>
