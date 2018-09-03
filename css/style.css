@@ -30,12 +30,6 @@ body {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 article,
 aside,
 details,
@@ -353,35 +347,10 @@ textarea {
   background-color: #ffffff;
 }
 
-.top-section.top-section-home,
-.top-section.top-section-single {
-  height: 400px !important;
-}
-
-.parallax-section {
-  background-attachment: fixed !important;
-}
-
-.top-section {
-  text-align: center;
-}
-
-.top-section.top-section-home .overlay-section {
-  padding: 0 !important;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
-}
-
-
-.overlay-section {
-  width: 100%;
-  height: 100%;
-  padding: 150px 0;
-  background: rgba(12, 24, 36, 0.75);
 }
 
 .about-section {
@@ -399,13 +368,6 @@ textarea {
 .container .row {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
-}
-
-.col {
-  visibility: visible;
-  animation-duration: 1s;
-  animation-delay: 0.3s;
-  animation-name: fadeInUp;
 }
 
 .row .col.s12 {
@@ -662,15 +624,6 @@ textarea {
   transform: scale(1);
 }
 
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
-}
-
 .fa-facebook:before {
   content: "\f09a"
 }
@@ -685,6 +638,10 @@ textarea {
 
 .fa-linkedin:before {
   content: "\f0e1"
+}
+
+.fa-angle-up:before {
+  content: "\f106";
 }
 
 
@@ -724,6 +681,12 @@ textarea {
   position: relative;
 }
 
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
 .c-form fieldset {
   border: 0;
   margin: 0;
@@ -745,6 +708,7 @@ textarea {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  letter-spacing: 1px;
 }
 
 input[type=text],
@@ -773,7 +737,6 @@ textarea.materialize-textarea {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   transition: all .3s;
-  letter-spacing: 1px;
 }
 
 textarea {
@@ -781,7 +744,7 @@ textarea {
   height: 3rem;
   background-color: transparent;
   overflow: auto;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 textarea.c-form-input {
@@ -1043,7 +1006,34 @@ textarea.c-form-input {
   border-radius: 50px;
 }
 
+.contact-map {
+  height: 438px;
+}
+
 /* /Contact Section */
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  padding: 70px;
+  background-color: #BCBCBC !important;
+
+}
+
+.copyright-text {
+  font-family: 'Dosis', 'Open Sans', 'Sans Serif' !important;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #BCBCBC !important;
+}
+
+/* /Footer */
 
 @media only screen and (min-width: 0) {
   html {
@@ -1101,5 +1091,12 @@ textarea.c-form-input {
   .about-img-content {
     width: 200px;
     height: 200px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 15px;
   }
 }
