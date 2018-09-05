@@ -30,6 +30,8 @@
 	initPreloaderFade();
 	initAnimateScroll();
 	initNavMenu();
+	initSectionHighlight();
+	initMiscellaneous();
 
 
 
@@ -136,6 +138,37 @@
 			$('.header').removeClass('header-visible');
 			$('.header').addClass('header-hidden');
 		}
+	}
+
+	/* --- Section Highlighting --- */
+
+	function initSectionHighlight() {
+		$('section').each(function() {
+			$(this).waypoint(function(direction) {
+				if (direction === 'down') {
+					var sec_id = $(this).attr('id');
+					var current_section_link = '.' + sec_id + '-nav';
+					$('.main-nav > ul > li > a').removeClass('active-nav');
+					$(current_section_link).addClass('active-nav');
+				}
+			}, { offset: '130px' });
+			$(this).waypoint(function(direction) {
+				if (direction === 'up') {
+					var sec_id = $(this).attr('id');
+					var current_section_link = '.' + sec_id + '-nav';
+					$('.main-nav > ul > li > a').removeClass('active-nav');
+					$(current_section_link).addClass('active-nav');
+				}
+			}, { offset: function() { return -$(this).height() + 130; } });
+		});
+	}
+
+	/* --- Miscellaneous --- */
+	
+	function initMiscellaneous() {
+		$('.single-blog-navigation').children('a').addClass('btn-custom waves-effect');
+		$('#wp-calendar').children('a').addClass('waves-effect waves-light');
+		$('.pagination').children('.page-numbers').addClass('btn-circle waves-effect waves-light');
 	}
 
 
