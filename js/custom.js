@@ -27,6 +27,7 @@
 	initHeroHeight();
 	initParallax();
 	initSectionHighlight();
+	initSearchArea();
 	initPreloaderFade();
 	initAnimateScroll();
 	initNavMenu();
@@ -98,6 +99,40 @@
 		}
 	}
 
+	/* --- Search Area --- */
+
+	function initSearchArea() {
+		$('.search-open').on('click', function() {
+			if ($('.search-area').hasClass('search-area-hidden')) {
+				$('.search-area').removeClass('search-area-hidden');
+				$('.search-area').addClass('search-area-visible');
+			}
+		});
+
+		$('html').on('click', function() {
+			if ($('.search-area').hasClass('search-area-visible')) {
+				$('.search-area').removeClass('search-area-visible');
+				$('.search-area').addClass('search-area-hidden');
+			}
+		});
+
+		$('.search-area, .search-open').on('click', function(e) {
+			e.stopPropagation();
+		});
+	}
+
+
+	/* --- Search Area Hide On Scroll --- */
+
+	function initSearchAreaHide() {
+		if ($(window).scrollTop() < 100) {
+			if ($('.search-area').hasClass('search-area-visible')) {
+				$('.search-area').removeClass('search-area-visible');
+				$('.search-area').addClass('search-area-hidden');
+			}
+		}
+	}
+
 
 	/* --- Animate Scroll --- */
 
@@ -164,7 +199,7 @@
 	}
 
 	/* --- Miscellaneous --- */
-	
+
 	function initMiscellaneous() {
 		$('.single-blog-navigation').children('a').addClass('btn-custom waves-effect');
 		$('#wp-calendar').children('a').addClass('waves-effect waves-light');
