@@ -1,0 +1,34 @@
+/* ---  Reference Section --- */
+
+.reference-wrapper{
+	text-align: center;
+	padding: 50px !important;
+	margin-top: 50px;
+}
+
+.reference-img img{
+	width: 60px;
+	height: auto;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	-webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
+}
+
+.reference-author{
+	font-family: 'Dosis', 'Open Sans', 'Sans Serif' !important;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	padding: 15px 0 7px;
+	text-transform: uppercase;
+}
+
+.reference-company{
+	font-size: 14px;
+	font-weight: 600;
+	color: #555555;
+	padding-bottom: 20px;
+}
