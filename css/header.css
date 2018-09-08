@@ -1,0 +1,235 @@
+/* --- Header --- */
+
+.header{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 111;
+	background: #ffffff;
+	padding: 0 50px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.header-visibile{
+	top: 0;
+	opacity: 1;
+	visibility: visible;
+}
+
+.header-hidden{
+	top: -60px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.site-logo{
+	float: left;
+}
+
+.site-logo a{
+	line-height: 60px;
+	font-family: 'Dosis', 'Open Sans', 'Sans Serif' !important;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.site-logo img{
+	height: 60px !important;
+	max-width: 100% !important;
+}
+
+.main-nav{
+	position: fixed;
+	top: 0;
+	display: block;
+	width: 300px;
+	height: 100%;
+	z-index: 11111111;
+	background: #ffffff !important;
+	-webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.main-nav.hidden{
+	right: -305px !important;
+}
+
+.main-nav.active{
+	right: 0 !important;
+}
+
+.main-nav ul{
+	margin: 60px 0 0 0;
+	padding: 0;
+}
+
+.main-nav li{
+	display: block;
+	float: none;
+	background: transparent !important;
+}
+
+.main-nav a{
+	display: inline-block;
+	font-family: 'Dosis', 'Open Sans', 'Sans Serif' !important;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	padding: 7px 30px;
+	position: relative;
+	color: #555555;
+	border-left: 5px solid transparent;
+	background: #ffffff !important;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.main-nav a::after{
+	display: block;
+	content: '';
+	width: 0%;
+	height: 2px;
+	z-index: -111;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.main-nav a.active-nav::after,
+.main-nav a:hover::after{
+	width: 100%;
+}
+
+.menu-bar{
+	margin-left: 20px;
+}
+
+.menu-bar,
+.menu-close,
+.search-open{
+	margin-top: 15px;
+	margin-left: 10px;
+	width: 30px;
+	height: 30px;
+	color: #ffffff;
+	text-align: center;
+	float: right;
+	font-size: 12px;
+	cursor: pointer;
+	line-height: 30px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
+}
+
+.menu-close{
+	margin: 15px 15px 0 0;
+}
+
+.search-area{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 60px;
+	padding: 0 50px;
+	width: 100%;
+	background: #ffffff;
+	z-index: 111111;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.search-area-hidden{
+	top: -60px;
+	opacity: 0;
+}
+
+.search-area-visibile{
+	top: 0;
+	opacity: 1;
+}
+
+.search-input{
+	float: left;
+	width: 100%;
+}
+
+.search-input fieldset{
+	margin: 0;
+	padding: 0;
+	border: 0 !important;
+}
+
+.search-input input[type="search"]{
+	height: 60px;
+	width: 100%;
+	font-size: 28px;
+	line-height: 60px;
+	font-weight: 700;
+	border: 0 !important;
+	margin: 0;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.site-header-title{
+	font-family: 'Dosis', 'Open Sans', 'Sans Serif' !important;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 42px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.top-section{
+	text-align: center;
+}
+
+.top-section.top-section-home,
+.top-section.top-section-single{
+	height: 400px !important;
+}
+
+.parallax-section{
+	background-attachment: fixed !important;
+}
+
+.overlay-section{
+	width: 100%;
+	height: 100%;
+	padding: 150px 0;
+	background: rgba(12, 24, 36, 0.75);
+}
+
+.top-section.top-section-home .overlay-section{
+	padding: 0 !important;
+}
+
+
+

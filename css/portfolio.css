@@ -316,34 +316,58 @@
     margin-top: 112px;
 }
 
-ol,
-ul {
-    padding: 0 0 0 25px;
-    margin: 0;
+/* --- 19. Single Portfolio Page --- */
+
+.single-portfolio-section {
+    margin-top: -250px;
 }
 
-ul {
-    padding: 0;
+.single-portfolio-thumbnail {
+    position: relative;
 }
 
-ul {
-    list-style-type: none;
+.single-portfolio-thumbnail img {
+    width: 100%;
+    height: auto;
 }
 
-ol li,
-ul li {
-    line-height: 30px;
-    font-size: 14px;
+.single-portfolio-title {
+    font-family: 'Dosis', 'Open Sans', 'Sans Serif' !important;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
 }
 
-ul li {
-    list-style-type: none;
+.single-portfolio-desc {
+    margin-top: 20px;
 }
 
-a {
-    background-color: transparent;
+.single-portfolio-desc img {
+    padding: 25px 0;
+    max-height: 100%;
+    width: auto;
 }
 
-.al-center {
-    text-align: center !important;
+.single-portfolio-demo-link {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.single-portfolio-demo-link a {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 1px;
+    letter-spacing: 1px;
+}
+
+.single-portfolio-info>div {
+    padding: 5px 0;
+}
+
+.single-portfolio-info span {
+    display: inline-block;
+    width: 100px;
+    font-weight: 600;
+    color: #555555;
 }

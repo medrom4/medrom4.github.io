@@ -1,0 +1,31 @@
+/* Footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  padding: 70px;
+  background-color: #BCBCBC !important;
+
+}
+
+.copyright-text {
+  font-family: 'Dosis', 'Open Sans', 'Sans Serif' !important;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #BCBCBC !important;
+}
+
+.back-to-top {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: -160px;
+}
+
+/* /Footer */

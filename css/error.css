@@ -1,0 +1,20 @@
+/* ---	20. Error Section --- */
+
+.error-404-section {
+    margin-top: 100px;
+}
+
+.error-404-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.error-404-section a {
+    margin-top: 30px;
+    padding: 10px 25px;
+    font-size: 16px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
