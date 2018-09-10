@@ -3,9 +3,9 @@
 
 <head>
   <title>RESUME</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/png">
 
   <link rel="stylesheet" href="css/general_styling.css">
   <link rel="stylesheet" href="css/preloader.css">
@@ -17,17 +17,17 @@
   <link rel="stylesheet" href="css/portfolio.css">
   <link rel="stylesheet" href="css/reference.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
-  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/owl.transitions.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/background.css">
   <link rel="stylesheet" href="css/stylefont.css">
-  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
-  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript " src="js/jquery-2.1.1.min.js"></script>
 </head>
 
 <body>
@@ -74,7 +74,8 @@
   <!-- / Background -->
 
   <!-- Preloader -->
-  <div class="preloader" style="display: none;">
+
+  <div class="preloader">
     <div class="preloader-inner">
       <div class="preloader-wrapper active">
         <div class="spinner-layer">
@@ -91,18 +92,19 @@
       </div>
     </div>
   </div>
+
   <!--/ Preloader -->
 
 
   <!-- Header -->
 
   <header class="header header-hidden shadow-bg">
-    <div class="site-logo"><a href="http://junaidhira.com/demo/html/tile/index.html#0" class="animatescroll-link" onclick="$(&#39;html&#39;).animatescroll();">TITLE</a></div>
+    <div class="site-logo"><a href="#0" class="animatescroll-link" onclick="$('html').animatescroll();">TILE</a></div>
     <div class="menu-bar waves-effect waves-light"><span class="fa fa-bars"></span></div>
     <div class="search-open waves-effect waves-light"><span class="fa fa-search"></span></div>
     <div class="search-area search-area-hidden clearfix">
       <div class="search-input">
-        <form role="search" method="get" action="http://junaidhira.com/demo/html/tile/index.html#0">
+        <form role="search" method="get" action="#0">
           <fieldset>
             <input type="search" name="s" placeholder="Search...">
           </fieldset>
@@ -132,7 +134,7 @@
 
   <!-- Top Section -->
 
-  <div class="site-header top-section top-section-home image-bg parallax-section" data-image-bg="img/bg/bg-1.jpg" style="background: url(&quot;img/bg-1.jpg&quot;) 50% 0px / cover no-repeat;">
+  <div class="site-header top-section top-section-home image-bg parallax-section" style="background: url(&quot;img/bg-1.jpg&quot;) 50% 0px / cover no-repeat;">
     <div class="overlay-section"></div>
   </div>
 
@@ -144,12 +146,11 @@
     <div class="section-content">
       <div class="container">
         <div class="row">
-          <div class="col s12 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-            <div class="col s12 w-block shadow-bg pd-0" style="border-radius: 20px 20px 0px 0px;">
-              <div class="col m5 s12 about-img parallax-layer al-center pd-50" style="position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-                <div class="about-img-content image-bg shadow-bg layer" data-depth="0.1" data-image-bg="img/me.jpg" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; background: url(&quot;img/me.jpg&quot;) center top / cover no-repeat;">
-                  <a href="https://drive.google.com/file/d/1xIYfkxtPaFPg4wFamhp9gMsIsl8MvP86/view?usp=sharing" class="btn-circle tooltipped layer shadow-bg" data-position="top" data-delay="50" data-tooltip="Download Resume" data-depth="0.25" data-tooltip-id="b1834b3b-b8a0-5b0d-6fe8-3042a5642572"
-                    style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(8.76253px, -10.8247px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><span class="fa fa-download"></span></a>
+          <div class="col s12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+            <div class="col s12 w-block shadow-bg pd-0">
+              <div class="col m5 s12 about-img parallax-layer al-center pd-50">
+                <div class="about-img-content image-bg shadow-bg layer" style="background: url(&quot;img/me.jpg&quot;) center top / cover no-repeat;">
+                  <a href="https://drive.google.com/file/d/1xIYfkxtPaFPg4wFamhp9gMsIsl8MvP86/view?usp=sharing" class="btn-circle tooltipped layer shadow-bg" data-position="top" data-delay="50" data-tooltip="Download Resume" data-depth="0.25"><span class="fa fa-download"></span></a>
                 </div>
                 <div class="about-name">Ramanovich Aliaksei</div>
                 <div class="about-title">Junior Front End Developer</div>
@@ -188,6 +189,7 @@
 
 
   <!-- Portfolio Section -->
+
   <section id="portfolio-section" class="portfolio-section">
     <div class="container">
       <div class="row">
@@ -197,31 +199,31 @@
         <div class="col s12">
           <div class="col s12 section-content pd-0">
             <ul class="filter">
-              <li><a class="active" href="http://junaidhira.com/demo/html/tile/index.html#" data-filter="*">All</a></li>
-              <li><a href="http://junaidhira.com/demo/html/tile/index.html#" data-filter=".python">Python</a></li>
-              <li><a href="http://junaidhira.com/demo/html/tile/index.html#" data-filter=".javascript">Javascript</a></li>
+              <li><a class="active" href="#" data-filter="*">All</a></li>
+              <li><a href="# " data-filter=".python ">HTML, CSS</a></li>
+              <li><a href="# " data-filter=".javascript ">Javascript</a></li>
             </ul>
 
-            <ul class="portfolio-items isotope" style="position: relative; overflow: hidden; height: 745.875px;">
+            <ul class="portfolio-items ">
 
               <!-- Single Portfolio -->
-              <li class="python react portfolio-content shadow-bg isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+              <li class="python react portfolio-content shadow-bg ">
                 <figure>
-                  <img src="img/p-1.jpg" alt="">
+                  <img src="img/p-1.jpg " alt=" ">
                   <figcaption>
-                    <div class="portfolio-intro">
-                      <div class="portfolio-intro-category">
-                        <p>Python</p>
-                        <p>React</p>
+                    <div class="portfolio-intro ">
+                      <div class="portfolio-intro-category ">
+                        <p>HTML</p>
+                        <p>CSS</p>
                       </div>
-                      <div class="portfolio-intro-title">
-                        <a href="http://junaidhira.com/demo/html/tile/single-portfolio.html">New portfolio title</a>
+                      <div class="portfolio-intro-title ">
+                        <a href="# ">New portfolio title</a>
                       </div>
-                      <div class="portfolio-intro-image">
-                        <a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="./Tile - Personal HTML Template_files/p-1.jpg" data-tooltip-id="7e5ce16d-526e-0d47-1f0a-61e0039e1e0b"><span class="fa fa-picture-o"></span></a>
+                      <div class="portfolio-intro-image ">
+                        <a class="btn-circle waves-effect portfolio-mfp tooltipped " data-position="top " data-delay="50 " data-tooltip="View Photo " href="img/portfolio/p-1.jpg "><span class="fa fa-picture-o "></span></a>
                       </div>
-                      <div class="portfolio-intro-detail">
-                        <a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Demo" href="http://junaidhira.com/demo/html/tile/index.html#0" target="_blank" data-tooltip-id="f87e3a25-6985-c544-99b9-36a21799eafd"><span class="fa fa-link"></span></a>
+                      <div class="portfolio-intro-detail ">
+                        <a class="btn-circle waves-effect tooltipped " data-position="top " data-delay="50 " data-tooltip="View Demo " href="#0 " target="_blank "><span class="fa fa-link "></span></a>
                       </div>
                     </div>
                   </figcaption>
@@ -230,23 +232,24 @@
               <!--/ Single Portfolio -->
 
               <!-- Single Portfolio -->
-              <li class="angular go portfolio-content shadow-bg isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(366px, 0px, 0px);">
+              <li class="javascript react portfolio-content shadow-bg ">
                 <figure>
-                  <img src="img/p-2.jpg" alt="">
+                  <img src="img/p-2.jpg " alt=" ">
                   <figcaption>
-                    <div class="portfolio-intro">
-                      <div class="portfolio-intro-category">
-                        <p>Angular</p>
-                        <p>Go</p>
+                    <div class="portfolio-intro ">
+                      <div class="portfolio-intro-category ">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
                       </div>
-                      <div class="portfolio-intro-title">
-                        <a href="http://junaidhira.com/demo/html/tile/single-portfolio.html">New portfolio title</a>
+                      <div class="portfolio-intro-title ">
+                        <a href="# ">New portfolio title</a>
                       </div>
-                      <div class="portfolio-intro-image">
-                        <a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="./Tile - Personal HTML Template_files/p-2.jpg" data-tooltip-id="6dbeb8e2-f3b5-04cb-57c5-98815e77480f"><span class="fa fa-picture-o"></span></a>
+                      <div class="portfolio-intro-image ">
+                        <a class="btn-circle waves-effect portfolio-mfp tooltipped " data-position="top " data-delay="50 " data-tooltip="View Photo " href="img/p-2.jpg "><span class="fa fa-picture-o "></span></a>
                       </div>
-                      <div class="portfolio-intro-detail">
-                        <a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Demo" href="http://junaidhira.com/demo/html/tile/index.html#0" target="_blank" data-tooltip-id="eea33d24-e6dc-3c91-f67b-d60b85b1228d"><span class="fa fa-link"></span></a>
+                      <div class="portfolio-intro-detail ">
+                        <a class="btn-circle waves-effect tooltipped " data-position="top " data-delay="50 " data-tooltip="View Demo " href="#0 " target="_blank "><span class="fa fa-link "></span></a>
                       </div>
                     </div>
                   </figcaption>
@@ -255,23 +258,23 @@
               <!--/ Single Portfolio -->
 
               <!-- Single Portfolio -->
-              <li class="javascript react portfolio-content shadow-bg isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 249px, 0px);">
+              <li class="python react portfolio-content shadow-bg ">
                 <figure>
-                  <img src="img/p-3.png" alt="">
+                  <img src="img/p-3.png " alt=" ">
                   <figcaption>
-                    <div class="portfolio-intro">
-                      <div class="portfolio-intro-category">
+                    <div class="portfolio-intro ">
+                      <div class="portfolio-intro-category ">
                         <p>In developing</p>
                         <p>In developing</p>
                       </div>
-                      <div class="portfolio-intro-title">
-                        <a href="http://junaidhira.com/demo/html/tile/single-portfolio.html">In developing</a>
+                      <div class="portfolio-intro-title ">
+                        <a href="# ">In developing</a>
                       </div>
-                      <div class="portfolio-intro-image">
-                        <a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="./Tile - Personal HTML Template_files/p-3.jpg" data-tooltip-id="71ee8a5b-78fc-e0a5-9987-83d936380f59"><span class="fa fa-picture-o"></span></a>
+                      <div class="portfolio-intro-image ">
+                        <a class="btn-circle waves-effect portfolio-mfp tooltipped " data-position="top " data-delay="50 " data-tooltip="View Photo " href="img/portfolio/p-3.jpg "><span class="fa fa-picture-o "></span></a>
                       </div>
-                      <div class="portfolio-intro-detail">
-                        <a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Demo" href="http://junaidhira.com/demo/html/tile/index.html#0" target="_blank" data-tooltip-id="83e0c3b2-40ec-a6c8-ebc8-69f9c8e4afd5"><span class="fa fa-link"></span></a>
+                      <div class="portfolio-intro-detail ">
+                        <a class="btn-circle waves-effect tooltipped " data-position="top " data-delay="50 " data-tooltip="View Demo " href="#0 " target="_blank "><span class="fa fa-link "></span></a>
                       </div>
                     </div>
                   </figcaption>
@@ -281,8 +284,8 @@
 
             </ul>
           </div>
-          <div class="col s12 portfolio-all al-center">
-            <a href="http://junaidhira.com/demo/html/tile/portfolio.html" class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="All Portfolio" data-tooltip-id="881b34ef-a508-2649-d95f-ca505dda864f"><span></span><span></span></a>
+          <div class="col s12 portfolio-all al-center ">
+            <a href="# " class="btn-circle waves-effect tooltipped " data-position="top " data-delay="50 " data-tooltip="All Portfolio "><span></span><span></span></a>
           </div>
         </div>
       </div>
@@ -293,32 +296,31 @@
 
   <!-- Reference Section -->
 
-  <section id="reference-section" class="reference-section">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 section-title">
+  <section id="reference-section " class="reference-section ">
+    <div class="container ">
+      <div class="row ">
+        <div class="col s12 section-title ">
           <h2>Reference</h2>
         </div>
-        <div class="col s12">
-          <div class="reference-wrapper col s12 w-block shadow-bg">
+        <div class="col s12 ">
+          <div class="reference-wrapper col s12 w-block shadow-bg ">
             <div class="reference-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
 
               <!-- Single Reference -->
-
               <div class="owl-wrapper-outer">
-                <div class="owl-wrapper" style="width: 1224px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);">
-                  <div class="owl-item" style="width: 204px;">
-                    <div class="item">
-                      <div class="reference-img">
-                        <img class="" src="img/r-1.png" alt="">
+                <div class="owl-wrapper" style="width: 7080px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);">
+                  <div class="owl-item" style="width: 1180px;">
+                    <div class="item ">
+                      <div class="reference-img ">
+                        <img class=" " src="img/r-1.png " alt=" ">
                       </div>
-                      <div class="reference-author">
+                      <div class="reference-author ">
                         Aliaksandr Ramanovich
                       </div>
-                      <div class="reference-company">
+                      <div class="reference-company ">
                         EPAM
                       </div>
-                      <div class="reference-content">
+                      <div class="reference-content ">
                         <p>
                           Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
                           sed, ne his explicari sadipscing.
@@ -326,18 +328,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="owl-item" style="width: 204px;">
-                    <div class="item">
-                      <div class="reference-img">
-                        <img class="" src="img/r-2.png" alt="">
+                  <!--/ Single Reference -->
+
+                  <!-- Single Reference -->
+
+                  <div class="owl-item" style="width: 1180px;">
+                    <div class="item ">
+                      <div class="reference-img ">
+                        <img class=" " src="img/r-2.png " alt=" ">
                       </div>
-                      <div class="reference-author">
+                      <div class="reference-author ">
                         Sofia Ramanovich
                       </div>
-                      <div class="reference-company">
+                      <div class="reference-company ">
                         IBA Group
                       </div>
-                      <div class="reference-content">
+                      <div class="reference-content ">
                         <p>
                           Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
                           sed, ne his explicari sadipscing.
@@ -345,18 +351,23 @@
                       </div>
                     </div>
                   </div>
-                  <div class="owl-item" style="width: 204px;">
-                    <div class="item">
-                      <div class="reference-img">
-                        <img class="" src="img/r-1.png" alt="">
+
+                  <!--/ Single Reference -->
+
+                  <!-- Single Reference -->
+
+                  <div class="owl-item" style="width: 1180px;">
+                    <div class="item ">
+                      <div class="reference-img ">
+                        <img class=" " src="img/r-1.png " alt=" ">
                       </div>
-                      <div class="reference-author">
+                      <div class="reference-author ">
                         Jon Snow
                       </div>
-                      <div class="reference-company">
+                      <div class="reference-company ">
                         SoftClub
                       </div>
-                      <div class="reference-content">
+                      <div class="reference-content ">
                         <p>
                           Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
                           sed, ne his explicari sadipscing.
@@ -375,10 +386,11 @@
               <!-- Single Reference -->
 
               <!--/ Single Reference -->
-
-              <div class="owl-controls clickable" style="display: none;">
-                <div class="owl-pagination">
-                  <div class="owl-page active"><span class=""></span></div>
+              <div class="owl-controls clickable">
+                <div class="owl-pagination ">
+                  <div class="owl-page active "><span class=" "></span></div>
+                  <div class="owl-page "><span class=" "></span></div>
+                  <div class="owl-page "><span class=" "></span></div>
                 </div>
               </div>
             </div>
@@ -393,21 +405,23 @@
 
   <!-- Contact Section -->
 
-  <section id="contact-section" class="contact-section">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 section-title">
+  <section id="contact-section " class="contact-section ">
+    <div class="container ">
+      <div class="row ">
+        <div class="col s12 section-title ">
           <h2>Contact</h2>
         </div>
-        <div class="col s12 pd-0 mgt-20">
-          <div class="col l5 s12 contact-map" style="height: 448px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89443.71189140886!2d27.57013047725838!3d53.90694941694291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1535920688435" width="100%" height="100%" frameborder="0" style="border:0"
-              allowfullscreen></iframe>
+        <div class="col s12 pd-0 mgt-20 ">
+          <div class="col l5 s12 contact-map " style="height: 445px; ">
+            <div class="col s12 w-block shadow-bg pd-0 ">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89443.71189140886!2d27.57013047725838!3d53.90694941694291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1535920688435 " width="100% " height="100%
+                " frameborder="0 " style="border:0 " allowfullscreen></iframe>
+            </div>
           </div>
 
-          <div class="col l7 s12 contact-form">
-            <div class="col s12 w-block shadow-bg pd-40">
-              <form id="c-form" class="c-form" action="http://junaidhira.com/demo/html/tile/index.html#0" method="post" data-email-address="medikroma@gmail.com" autocomplete="off">
+          <div class="col l7 s12 contact-form ">
+            <div class="col s12 w-block shadow-bg pd-40 ">
+              <form id="c-form " class="c-form " action="#0 " method="post " data-email-address="medikroma@gmail.com " autocomplete="off ">
                 <fieldset>
                   <input id="name" type="text" name="name" class="c-form-input" placeholder="Name">
                   <input id="email" type="text" name="email" class="c-form-input" placeholder="Email">
@@ -418,34 +432,35 @@
                 </fieldset>
               </form>
 
-              <div class="c-form-alert hero-height" style="height: 714px;">
-                <div class="alert-content alert-attention w-block">
-                  <div class="alert-icon"><span class="fa fa-info-circle"></span></div>
-                  <div class="alert-title">Attention</div>
-                  <div class="alert-desc">
+              <div class="c-form-alert hero-height ">
+                <div class="alert-content alert-attention w-block ">
+                  <div class="alert-icon "><span class="fa fa-info-circle "></span></div>
+                  <div class="alert-title ">Attention</div>
+                  <div class="alert-desc ">
                     <p>The name, subject and the message field must be at least 3 characters long. Make sure your email is valid too!</p>
                   </div>
-                  <div class="alert-close"><a class="btn-custom waves-effect" href="http://junaidhira.com/demo/html/tile/index.html#0">Close Me</a></div>
+                  <div class="alert-close "><a class="btn-custom waves-effect " href="#0 ">Close Me</a></div>
                 </div>
-                <div class="alert-content alert-success w-block">
-                  <div class="alert-icon alert-icon-success"><span class="fa fa-check-circle"></span></div>
-                  <div class="alert-title">Success</div>
-                  <div class="alert-desc">
+                <div class="alert-content alert-success w-block ">
+                  <div class="alert-icon alert-icon-success "><span class="fa fa-check-circle "></span></div>
+                  <div class="alert-title ">Success</div>
+                  <div class="alert-desc ">
                     <p>Your message has been received! Thank you for writing.</p>
                   </div>
-                  <div class="alert-close"><a class="btn-custom waves-effect" href="http://junaidhira.com/demo/html/tile/index.html#0">Close Me</a></div>
+                  <div class="alert-close "><a class="btn-custom waves-effect " href="#0 ">Close Me</a></div>
                 </div>
-                <div class="alert-content alert-error w-block">
-                  <div class="alert-icon"><span class="fa fa-times-circle"></span></div>
-                  <div class="alert-title">Error</div>
-                  <div class="alert-desc">
+                <div class="alert-content alert-error w-block ">
+                  <div class="alert-icon "><span class="fa fa-times-circle "></span></div>
+                  <div class="alert-title ">Error</div>
+                  <div class="alert-desc ">
                     <p>Message couldn't be sent due to server problem.</p>
                   </div>
-                  <div class="alert-close"><a class="btn-custom waves-effect" href="http://junaidhira.com/demo/html/tile/index.html#0">Close Me</a></div>
+                  <div class="alert-close "><a class="btn-custom waves-effect " href="#0 ">Close Me</a></div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -456,15 +471,15 @@
 
   <!-- Footer Section -->
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 back-to-top-wrapper">
-          <a class="btn-circle  waves-effect back-to-top tooltipped animatescroll-link wow zoomIn" data-wow-duration="0.7s" data-wow-delay="0.3s" data-wow-offset="0" data-position="top" data-delay="50" data-tooltip="Go To Top" onclick="$('html').animatescroll();"
-            href="#0">
-							<span class="fa fa-angle-up"></span>
+  <footer class="footer ">
+    <div class="container ">
+      <div class="row ">
+        <div class="col s12 back-to-top-wrapper ">
+          <a class="btn-circle waves-effect back-to-top tooltipped animatescroll-link wow zoomIn " data-wow-duration="0.7s " data-wow-delay="0.3s " data-wow-offset="0 " data-position="top " data-delay="50 " data-tooltip="Go To Top " onclick="$(
+                'html').animatescroll(); " href="#0 ">
+							<span class="fa fa-angle-up "></span>
 						</a>
-          <div class="copyright-text">
+          <div class="copyright-text ">
             &copy; All rights Reserved.
           </div>
         </div>
@@ -473,15 +488,15 @@
   </footer>
 
   <!--/ Footer Section -->
-  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript " src="js/device.min.js"></script>
-  <script type="text/javascript " src="js/parallax.js"></script>
-  <script type="text/javascript " src="js/jquery.parallax.js"></script>
 
-  <script type="text/javascript " src="js/owl.carousel.js"></script>
-  <script type="text/javascript " src="js/wow.js"></script>
-  <script type="text/javascript " src="js/custom.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/device.min.js"></script>
+  <script type="text/javascript" src="js/parallax.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
 
 
 </body>
