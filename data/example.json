@@ -1,0 +1,23 @@
+{
+    "CA": [{
+            "time": "1.",
+            "title": "State educational institution 'kindergarten'"
+        },
+        {
+            "time": "2.",
+            "title": "State educational institution 'high school'"
+        }
+    ],
+    "TX": [{
+        "time": "1.",
+        "title": "Educational establishment 'Borisov state medical college'"
+    }],
+    "NY": [{
+        "time": "1.",
+        "title": "Educational institution 'Vitebsk State University named after P.M. Masherov'"
+    }],
+    "CN": [{
+        "time": "1.",
+        "title": "it-academy - Educational Center of the Park of High Technologies"
+    }]
+}
