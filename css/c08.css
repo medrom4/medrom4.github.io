@@ -30,6 +30,8 @@ a {
   font-size: 1.5rem;
   line-height: 100%;
   margin: 1.46rem 0 1.168rem 0;
+  text-align: center;
+  font-weight: 700;
 }
 
 .img-educat {
@@ -245,6 +247,11 @@ input[type=submit]:hover {
 }
 
 #details p {
-  padding: 0;
-  margin: 0.8em 0 0 0;
+  padding: 0px 20px 0px 20px;
+  margin: 2em 0 0 0;
+}
+
+p.detail-third {
+  margin-top: 2em;
+  text-align: center;
 }
