@@ -134,7 +134,7 @@
 	text-align: center;
 	float: right;
 	font-size: 12px;
-	cursor: pointer;
+	cursor: url(cursor/link.cur), auto;
 	line-height: 30px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;

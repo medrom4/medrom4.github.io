@@ -2316,7 +2316,7 @@ button,
 input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: button;
-	cursor: pointer
+	cursor: pointer;
 }
 
 button[disabled],
@@ -7343,7 +7343,7 @@ footer.page-footer .footer-copyright {
 }
 
 .card .card-title.activator {
-	cursor: pointer
+	cursor: pointer;
 }
 
 .card.small,
@@ -7479,7 +7479,7 @@ footer.page-footer .footer-copyright {
 
 .card .card-reveal .card-title {
 	cursor: pointer;
-	display: block
+	display: block;
 }
 
 #toast-container {
@@ -7742,7 +7742,7 @@ footer.page-footer .footer-copyright {
 	-o-transition: .2s ease-out;
 	-ms-transition: .2s ease-out;
 	transition: .2s ease-out;
-	cursor: pointer
+	cursor: pointer;
 }
 
 .btn:hover,
@@ -7823,7 +7823,7 @@ button.btn-floating {
 	box-shadow: none;
 	background-color: transparent;
 	color: #343434;
-	cursor: pointer
+	cursor: pointer;
 }
 
 .btn-flat.disabled {
@@ -8047,7 +8047,7 @@ a.waves-effect .waves-ripple {
 }
 
 .modal .modal-close {
-	cursor: pointer
+	cursor: pointer;
 }
 
 .modal .modal-footer {
@@ -8544,7 +8544,7 @@ textarea.materialize-textarea + label:after {
 	top: 0.8rem;
 	left: 0.75rem;
 	font-size: 1rem;
-	cursor: text;
+	cursor: url(cursor/text.cur), auto;
 	-webkit-transition: .2s ease-out;
 	-moz-transition: .2s ease-out;
 	-o-transition: .2s ease-out;
@@ -8978,7 +8978,7 @@ form p:last-child {
 }
 
 .switch label {
-	cursor: pointer
+	cursor: pointer;
 }
 
 .switch label input[type=checkbox] {
@@ -9137,7 +9137,7 @@ select:disabled {
 }
 
 .file-field span {
-	cursor: pointer
+	cursor: pointer;
 }
 
 .file-field input[type=file] {
@@ -9161,7 +9161,7 @@ select:disabled {
 
 input[type=range],
 input[type=range] + .thumb {
-	cursor: pointer
+	cursor: pointer;
 }
 
 input[type=range] {
@@ -10272,7 +10272,7 @@ select {
 
 .picker__day--highlighted:hover,
 .picker--focused .picker__day--highlighted {
-	cursor: pointer
+	cursor: pointer;
 }
 
 .picker__day--selected,

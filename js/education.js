@@ -21,35 +21,35 @@ $(function() {
 
 	loadTimetable();
 
-	// ПО ЩЕЛЧКУ- ЗАГРУЖАЕМ ПЛАН МЕРОПРИЯТИЯ
-	
+	// КЛИК - ЗАГРУЖАЕМ ПЛАН МЕРОПРИЯТИЯ
+
 	$('#content').on('click', '#event a', function(e) {
 
 		e.preventDefault();
 		var loc = this.id.toUpperCase();
 
-		var newContent = ''; // Формируем таблицу с планом мероприятия
-		for (var i = 0; i < number[loc].length; i++) { // перебирая мероприятия
+		var newContent = '';
+		for (var i = 0; i < number[loc].length; i++) {
 			newContent += '<li><span class="num">' + number[loc][i].num + '</span>';
 			newContent += '<a href="descriptions.html#';
-			newContent += number[loc][i].title.replace(/ /g, '-') + '">';
+			newContent += number[loc][i].title.replace(/ /g, '-').replace(/'/g, '') + '">';
 			newContent += number[loc][i].title + '</a></li>';
 		}
 
-		$('#sessions').html('<ul>' + newContent + '</ul>'); // Выводим время на странице
+		$('#sessions').html('<ul>' + newContent + '</ul>');
 
-		$('#event a.current').removeClass('current'); // Обновляем выбранный элемент
+		$('#event a.current').removeClass('current');
 		$(this).addClass('current');
 
-		$('#details').text(''); // Очищаем третью колонку
+		$('#details').text('');
 	});
 
-	// ПО ЩЕЛЧКУ МЕРОПРИЯТИя - ЗАГРУЖАЕМ ЕГО ПЛАН
-	
+	// КЛИК МЕРОПРИЯТИЕ - ЗАГРУЖАЕМ ЕГО ПЛАН
+
 	$('#content').on('click', '#sessions li a', function(e) {
 		e.preventDefault();
 		var fragment = this.href;
-
+		
 		fragment = fragment.replace('#', ' #');
 		$('#details').load(fragment);
 
@@ -58,8 +58,8 @@ $(function() {
 	});
 
 
-	// ЩЕЛЧОК - ПЕРВАЯ НАВИГАЦИЯ
-	
+	// КЛИК - ПЕРВАЯ НАВИГАЦИЯ
+
 	$('nav a').on('click', function(e) {
 		e.preventDefault();
 		var url = this.href;

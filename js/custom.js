@@ -33,7 +33,7 @@
 	initNavMenu();
 	initSectionHighlight();
 	initMiscellaneous();
-	initContactForm();
+	// initContactForm();
 
 
 
