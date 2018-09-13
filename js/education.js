@@ -1,19 +1,19 @@
-$(function() { // Когда дерево DOM готово
+$(function() {
 
-	var times; // Объявляем глобальную переменную
+	var number;
 	$.ajax({
-		beforeSend: function(xhr) { // Перед выполнением запроса
-			if (xhr.overrideMimeType) { // Если поддерживается
-				xhr.overrideMimeType("application/json"); // Устанавливаем MIME для избегания ошибок
+		beforeSend: function(xhr) {
+			if (xhr.overrideMimeType) {
+				xhr.overrideMimeType("application/json");
 			}
 		}
 	});
 
-	// ФУНКЦИЯ, КОТОРАЯ СОБИРАЕТ ДАННЫЕ ИЗ JSON-ФАЙЛА
+	//СОБИРАЕМ ДАННЫЕ ИЗ JSON-ФАЙЛА
 	function loadTimetable() {
 		$.getJSON('data/example.json')
 			.done(function(data) {
-				times = data;
+				number = data;
 			}).fail(function() {
 				$('#event').html('Can not load information about education');
 			});
@@ -21,18 +21,19 @@ $(function() { // Когда дерево DOM готово
 
 	loadTimetable();
 
-	// ЩЕЛЧОК ПО МЕРОПРИЯТИЮ ЗАГРУЖАЕТ ПЛАН МЕРОПРИЯТИЯ 
+	// ПО ЩЕЛЧКУ- ЗАГРУЖАЕМ ПЛАН МЕРОПРИЯТИЯ
+	
 	$('#content').on('click', '#event a', function(e) {
 
 		e.preventDefault();
 		var loc = this.id.toUpperCase();
 
 		var newContent = ''; // Формируем таблицу с планом мероприятия
-		for (var i = 0; i < times[loc].length; i++) { // перебирая мероприятия
-			newContent += '<li><span class="time">' + times[loc][i].time + '</span>';
+		for (var i = 0; i < number[loc].length; i++) { // перебирая мероприятия
+			newContent += '<li><span class="num">' + number[loc][i].num + '</span>';
 			newContent += '<a href="descriptions.html#';
-			newContent += times[loc][i].title.replace(/ /g, '-') + '">';
-			newContent += times[loc][i].title + '</a></li>';
+			newContent += number[loc][i].title.replace(/ /g, '-') + '">';
+			newContent += number[loc][i].title + '</a></li>';
 		}
 
 		$('#sessions').html('<ul>' + newContent + '</ul>'); // Выводим время на странице
@@ -43,29 +44,31 @@ $(function() { // Когда дерево DOM готово
 		$('#details').text(''); // Очищаем третью колонку
 	});
 
-	// ЩЕЛЧОК ПО МЕРОПРИЯТИЮ ЗАГРУЖАЕТ ЕГО ПЛАН
-	$('#content').on('click', '#sessions li a', function(e) { // Щелчок по мероприятию
-		e.preventDefault(); // Останавливаем загрузку
-		var fragment = this.href; // Заголовок в href
+	// ПО ЩЕЛЧКУ МЕРОПРИЯТИя - ЗАГРУЖАЕМ ЕГО ПЛАН
+	
+	$('#content').on('click', '#sessions li a', function(e) {
+		e.preventDefault();
+		var fragment = this.href;
 
-		fragment = fragment.replace('#', ' #'); // Добавляем пробел перед #
-		$('#details').load(fragment); // Чтобы загрузить данные
+		fragment = fragment.replace('#', ' #');
+		$('#details').load(fragment);
 
-		$('#sessions a.current').removeClass('current'); // Обновляем выбранный план мероприятия
+		$('#sessions a.current').removeClass('current');
 		$(this).addClass('current');
 	});
 
 
-	// ЩЕЛЧОК ПО ПЕРВИЧНОЙ НАВИГАЦИИ
-	$('nav a').on('click', function(e) { // Щелчок по nav
-		e.preventDefault(); // Останавливаем загрузку
-		var url = this.href; // Получаем URL для загрузки
+	// ЩЕЛЧОК - ПЕРВАЯ НАВИГАЦИЯ
+	
+	$('nav a').on('click', function(e) {
+		e.preventDefault();
+		var url = this.href;
 
-		$('nav a.current').removeClass('current'); // Обновляем nav
+		$('nav a.current').removeClass('current');
 		$(this).addClass('current');
 
-		$('#container').remove("#delet-educ"); // Удаляем прежнее содержимое
-		$('#content').load(url + ' #container').appendChild(); // Добавляем новое содержимое
+		$('#container').remove("#delet-educ");
+		$('#content').load(url + ' #container').appendChild();
 	});
 
 });

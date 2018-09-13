@@ -36,8 +36,8 @@ a {
 }
 
 .third,
-.event {
-  width: 300px;
+#event {
+  width: 33.33333%;
   float: left;
   text-align: center;
   margin-top: 10px;
@@ -52,7 +52,7 @@ a {
 }
 
 .third p {
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0px 10px;
   text-align: left;
   line-height: 1.4em;
 }
@@ -159,6 +159,10 @@ input[type=submit]:hover {
   background-image: url('../img/tr.png');
 }
 
+#delet-educ {
+  display: table;
+  margin: 0 auto;
+}
 
 /* Example */
 
@@ -190,7 +194,7 @@ input[type=submit]:hover {
   height: 50px;
   float: left;
   margin-top: 25px;
-  margin-left: 40px;
+  margin-left: 25px;
   margin-right: 15px;
 }
 
@@ -200,12 +204,15 @@ input[type=submit]:hover {
 }
 
 #sessions a {
-  font-size: 120%;
+  font-size: 100%;
 }
 
-#sessions p {
+#sessions p,
+#detals p {
   margin-top: 2em;
+  text-align: center;
 }
+
 
 #sessions ul {
   padding: 0 10px 0 10px;
@@ -217,6 +224,7 @@ input[type=submit]:hover {
   background-color: #fff;
   text-align: left;
   letter-spacing: 0.6px;
+  line-height: 1.7em;
 }
 
 #sessions li:first-child {
@@ -224,7 +232,7 @@ input[type=submit]:hover {
   padding-top: 1.8em;
 }
 
-#sessions li .time {
+#sessions li .num {
   display: inline-block;
   width: 15px;
   letter-spacing: 2.6px;

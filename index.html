@@ -5,7 +5,7 @@
   <title>RESUME</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
 
 
   <link rel="stylesheet" href="css/general_styling.css">
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/c08.css">
 
-  <script type="text/javascript " src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 </head>
 
 <body>
@@ -152,7 +152,7 @@
             <div class="col s12 w-block shadow-bg pd-0">
               <div class="col m5 s12 about-img parallax-layer al-center pd-50">
                 <div class="about-img-content image-bg shadow-bg layer" style="background: url(&quot;img/me.jpg&quot;) center top / cover no-repeat;">
-                  <a href="https://drive.google.com/file/d/1xIYfkxtPaFPg4wFamhp9gMsIsl8MvP86/view?usp=sharing" class="btn-circle tooltipped layer shadow-bg" data-position="top" data-delay="50" data-tooltip="Download Resume" data-depth="0.25"><span class="fa fa-download"></span></a>
+                  <a href="https://drive.google.com/file/d/1xIYfkxtPaFPg4wFamhp9gMsIsl8MvP86/view?usp=sharing" class="btn-circle tooltipped layer shadow-bg" data-position="top" data-delay="50" data-tooltip="Download Resume" data-depth="0.25" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-3.22605px, 2.99466px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><span class="fa fa-download"></span></a>
                 </div>
                 <div class="about-name">Ramanovich Aliaksei</div>
                 <div class="about-title">Junior Front End Developer</div>
@@ -208,22 +208,24 @@
 
             <section id="content">
               <div id="container">
-                <div id="delet-educ">
+                <div id="delet-educ" style="width: 100%;">
                   <div class="third">
-                    <div id="event">
-                      <a class="a-all" id="ca" href="ca.html"><img src="img/map-cn.png" alt="school" />. . .-2008</a>
-                      <a class="a-all" id="tx" href="tx.html"><img src="img/map-tx.png" alt="college" />2008-2010</a>
-                      <a class="a-all" id="ny" href="ny.html"><img src="img/map-ny.png" alt="university" />2012-2017</a>
-                      <a class="a-all" id="cn" href="cn.html"><img src="img/map-ca.png" alt="it-academy" />2017-. . .</a>
+                    <div id="event" style="width: 100%;">
+                      <a class="a-all" id="ca" href="#"><img src="img/map-cn.png" alt="school" />. . .-2008</a>
+                      <a class="a-all" id="tx" href="#"><img src="img/map-tx.png" alt="college" />2008-2010</a>
+                      <a class="a-all" id="ny" href="#"><img src="img/map-ny.png" alt="university" />2012-2017</a>
+                      <a class="a-all" id="cn" href="#"><img src="img/map-ca.png" alt="it-academy" />2017-. . .</a>
                     </div>
                   </div>
                   <div class="third">
                     <div id="sessions">
-                      <p>select the education you are interested in</p>
+                      <p>Select the education you are interested in</p>
                     </div>
                   </div>
                   <div class="third">
-                    <div id="details"></div>
+                    <div id="detals">
+                      <p>Details</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -251,92 +253,98 @@
           <div class="col s12 section-content pd-0">
             <ul class="filter">
               <li><a class="active" href="#" data-filter="*">All</a></li>
-              <li><a href="# " data-filter=".python ">HTML, CSS</a></li>
-              <li><a href="# " data-filter=".javascript ">Javascript</a></li>
+              <li><a href="#" data-filter=".python">HTML, CSS</a></li>
+              <li><a href="#" data-filter=".javascript">Javascript</a></li>
             </ul>
 
-            <ul class="portfolio-items ">
+            <ul class="portfolio-items">
 
               <!-- Single Portfolio -->
-              <li class="python react portfolio-content shadow-bg ">
+
+              <li class="python react portfolio-content shadow-bg">
                 <figure>
-                  <img src="img/p-1.png " alt=" ">
+                  <img src="img/p-1.png" alt="">
                   <figcaption>
-                    <div class="portfolio-intro ">
-                      <div class="portfolio-intro-category ">
+                    <div class="portfolio-intro">
+                      <div class="portfolio-intro-category">
                         <p>HTML</p>
                         <p>CSS</p>
                       </div>
-                      <div class="portfolio-intro-title ">
-                        <a href="# ">New portfolio title</a>
+                      <div class="portfolio-intro-title">
+                        <a href="#">New portfolio title</a>
                       </div>
-                      <div class="portfolio-intro-image ">
-                        <a class="btn-circle waves-effect portfolio-mfp tooltipped " data-position="top " data-delay="50 " data-tooltip="View Photo " href="img/p-1.jpg "><span class="fa fa-picture-o "></span></a>
+                      <div class="portfolio-intro-image">
+                        <a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/p-1.jpg"><span class="fa fa-picture-o"></span></a>
                       </div>
-                      <div class="portfolio-intro-detail ">
-                        <a class="btn-circle waves-effect tooltipped " data-position="top " data-delay="50 " data-tooltip="View Demo " href="#0 " target="_blank "><span class="fa fa-link "></span></a>
+                      <div class="portfolio-intro-detail">
+                        <a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Demo" href="#0" target="_blank"><span class="fa fa-link"></span></a>
                       </div>
                     </div>
                   </figcaption>
                 </figure>
               </li>
+
               <!--/ Single Portfolio -->
 
               <!-- Single Portfolio -->
-              <li class="javascript react portfolio-content shadow-bg ">
+
+              <li class="javascript react portfolio-content shadow-bg">
                 <figure>
-                  <img src="img/p-2.png " alt=" ">
+                  <img src="img/p-2.png" alt="">
                   <figcaption>
-                    <div class="portfolio-intro ">
-                      <div class="portfolio-intro-category ">
+                    <div class="portfolio-intro">
+                      <div class="portfolio-intro-category">
                         <p>HTML</p>
                         <p>CSS</p>
                         <p>Javascript</p>
                       </div>
-                      <div class="portfolio-intro-title ">
-                        <a href="# ">New portfolio title</a>
+                      <div class="portfolio-intro-title">
+                        <a href="#">New portfolio title</a>
                       </div>
-                      <div class="portfolio-intro-image ">
-                        <a class="btn-circle waves-effect portfolio-mfp tooltipped " data-position="top " data-delay="50 " data-tooltip="View Photo " href="img/p-2.png "><span class="fa fa-picture-o "></span></a>
+                      <div class="portfolio-intro-image">
+                        <a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/p-2.png"><span class="fa fa-picture-o"></span></a>
                       </div>
-                      <div class="portfolio-intro-detail ">
-                        <a class="btn-circle waves-effect tooltipped " data-position="top " data-delay="50 " data-tooltip="View Demo " href="#0 " target="_blank "><span class="fa fa-link "></span></a>
+                      <div class="portfolio-intro-detail">
+                        <a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Demo" href="#0" target="_blank"><span class="fa fa-link"></span></a>
                       </div>
                     </div>
                   </figcaption>
                 </figure>
               </li>
+              
               <!--/ Single Portfolio -->
 
               <!-- Single Portfolio -->
-              <li class="python react portfolio-content shadow-bg ">
+              
+              <li class="python react portfolio-content shadow-bg">
                 <figure>
-                  <img src="img/p-3.png " alt=" ">
+                  <img src="img/p-3.png" alt="">
                   <figcaption>
-                    <div class="portfolio-intro ">
-                      <div class="portfolio-intro-category ">
+                    <div class="portfolio-intro">
+                      <div class="portfolio-intro-category">
                         <p>In developing</p>
                         <p>In developing</p>
                       </div>
-                      <div class="portfolio-intro-title ">
-                        <a href="# ">In developing</a>
+                      <div class="portfolio-intro-title">
+                        <a href="#">In developing</a>
                       </div>
-                      <div class="portfolio-intro-image ">
-                        <a class="btn-circle waves-effect portfolio-mfp tooltipped " data-position="top " data-delay="50 " data-tooltip="View Photo " href="img/p-3.png "><span class="fa fa-picture-o "></span></a>
+                      <div class="portfolio-intro-image">
+                        <a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/p-3.png"><span class="fa fa-picture-o"></span></a>
                       </div>
-                      <div class="portfolio-intro-detail ">
-                        <a class="btn-circle waves-effect tooltipped " data-position="top " data-delay="50 " data-tooltip="View Demo " href="#0 " target="_blank "><span class="fa fa-link "></span></a>
+                      <div class="portfolio-intro-detail">
+                        <a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Demo" href="#0" target="_blank"><span class="fa fa-link"></span></a>
                       </div>
                     </div>
                   </figcaption>
                 </figure>
               </li>
+              
               <!--/ Single Portfolio -->
 
             </ul>
           </div>
-          <div class="col s12 portfolio-all al-center ">
-            <a href="# " class="btn-circle waves-effect tooltipped " data-position="top " data-delay="50 " data-tooltip="All Portfolio "><span></span><span></span></a>
+          <div class="col s12 portfolio-all al-center">
+            <a href="#" class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="All Portfolio"><span></span><span></span></a>
           </div>
         </div>
       </div>
@@ -353,7 +361,7 @@
         <div class="col s12 section-title">
           <h2>Reference</h2>
         </div>
-        <div class="col s12 ">
+        <div class="col s12">
           <div class="reference-wrapper col s12 w-block shadow-bg">
             <div class="reference-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
 
@@ -361,9 +369,9 @@
               <div class="owl-wrapper-outer">
                 <div class="owl-wrapper" style="width: 7080px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);">
                   <div class="owl-item" style="width: 1180px;">
-                    <div class="item ">
-                      <div class="reference-img ">
-                        <img class=" " src="img/r-1.png " alt=" ">
+                    <div class="item">
+                      <div class="reference-img">
+                        <img class="" src="img/r-1.png" alt="">
                       </div>
                       <div class="reference-author">
                         Aliaksandr Ramanovich
@@ -379,22 +387,23 @@
                       </div>
                     </div>
                   </div>
+                  
                   <!--/ Single Reference -->
 
                   <!-- Single Reference -->
 
                   <div class="owl-item" style="width: 1180px;">
-                    <div class="item ">
-                      <div class="reference-img ">
-                        <img class=" " src="img/r-2.png " alt=" ">
+                    <div class="item">
+                      <div class="reference-img">
+                        <img class="" src="img/r-2.png" alt="">
                       </div>
-                      <div class="reference-author ">
+                      <div class="reference-author">
                         Sofia Ramanovich
                       </div>
-                      <div class="reference-company ">
+                      <div class="reference-company">
                         IBA Group
                       </div>
-                      <div class="reference-content ">
+                      <div class="reference-content">
                         <p>
                           Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
                           sed, ne his explicari sadipscing.
@@ -408,17 +417,17 @@
                   <!-- Single Reference -->
 
                   <div class="owl-item" style="width: 1180px;">
-                    <div class="item ">
-                      <div class="reference-img ">
-                        <img class=" " src="img/r-1.png " alt=" ">
+                    <div class="item">
+                      <div class="reference-img">
+                        <img class="" src="img/r-1.png" alt="">
                       </div>
-                      <div class="reference-author ">
+                      <div class="reference-author">
                         Jon Snow
                       </div>
-                      <div class="reference-company ">
+                      <div class="reference-company">
                         SoftClub
                       </div>
-                      <div class="reference-content ">
+                      <div class="reference-content">
                         <p>
                           Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
                           sed, ne his explicari sadipscing.
@@ -438,10 +447,10 @@
 
               <!--/ Single Reference -->
               <div class="owl-controls clickable">
-                <div class="owl-pagination ">
-                  <div class="owl-page active "><span class=" "></span></div>
-                  <div class="owl-page "><span class=" "></span></div>
-                  <div class="owl-page "><span class=" "></span></div>
+                <div class="owl-pagination">
+                  <div class="owl-page active"><span class=""></span></div>
+                  <div class="owl-page"><span class=""></span></div>
+                  <div class="owl-page"><span class=""></span></div>
                 </div>
               </div>
             </div>
@@ -457,56 +466,56 @@
   <!-- Contact Section -->
 
   <section id="contact-section" class="contact-section">
-    <div class="container ">
-      <div class="row ">
-        <div class="col s12 section-title ">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 section-title">
           <h2>Contact</h2>
         </div>
-        <div class="col s12 pd-0 mgt-20 ">
-          <div class="col l5 s12 contact-map " style="height: 445px; ">
-            <div class="col s12 w-block shadow-bg pd-0 ">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89443.71189140886!2d27.57013047725838!3d53.90694941694291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1535920688435 " width="100% " height="100%
-                " frameborder="0 " style="border:0 " allowfullscreen></iframe>
+        <div class="col s12 pd-0 mgt-20">
+          <div class="col l5 s12 contact-map" style="height: 445px;">
+            <div class="col s12 w-block shadow-bg pd-0">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89443.71189140886!2d27.57013047725838!3d53.90694941694291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1535920688435" width="100%" height="100%" frameborder="0" style="border:0"
+                allowfullscreen></iframe>
             </div>
           </div>
 
-          <div class="col l7 s12 contact-form ">
-            <div class="col s12 w-block shadow-bg pd-40 ">
-              <form id="c-form " class="c-form " action="#0 " method="post " data-email-address="medikroma@gmail.com " autocomplete="off ">
+          <div class="col l7 s12 contact-form">
+            <div class="col s12 w-block shadow-bg pd-40">
+              <form id="c-form" class="c-form" action="#0" method="post" data-email-address="medikroma@gmail.com" autocomplete="off">
                 <fieldset>
                   <input id="name" type="text" name="name" class="c-form-input" placeholder="Name">
                   <input id="email" type="text" name="email" class="c-form-input" placeholder="Email">
                   <input id="subject" type="text" name="subject" class="c-form-input" placeholder="Subject">
                   <textarea id="message" name="message" class="c-form-input" placeholder="Message"></textarea>
                   <button class="btn-custom waves-effect" type="submit" name="button">Send Message</button>
-                  <span id="c-form-spinner" class="fa fa-circle-o-notch "></span>
+                  <span id="c-form-spinner" class="fa fa-circle-o-notch"></span>
                 </fieldset>
               </form>
 
-              <div class="c-form-alert hero-height ">
-                <div class="alert-content alert-attention w-block ">
-                  <div class="alert-icon "><span class="fa fa-info-circle "></span></div>
-                  <div class="alert-title ">Attention</div>
-                  <div class="alert-desc ">
+              <div class="c-form-alert hero-height">
+                <div class="alert-content alert-attention w-block">
+                  <div class="alert-icon"><span class="fa fa-info-circle"></span></div>
+                  <div class="alert-title">Attention</div>
+                  <div class="alert-desc">
                     <p>The name, subject and the message field must be at least 3 characters long. Make sure your email is valid too!</p>
                   </div>
-                  <div class="alert-close "><a class="btn-custom waves-effect " href="#0 ">Close Me</a></div>
+                  <div class="alert-close"><a class="btn-custom waves-effect" href="#0">Close Me</a></div>
                 </div>
-                <div class="alert-content alert-success w-block ">
-                  <div class="alert-icon alert-icon-success "><span class="fa fa-check-circle "></span></div>
-                  <div class="alert-title ">Success</div>
-                  <div class="alert-desc ">
+                <div class="alert-content alert-success w-block">
+                  <div class="alert-icon alert-icon-success"><span class="fa fa-check-circle"></span></div>
+                  <div class="alert-title">Success</div>
+                  <div class="alert-desc">
                     <p>Your message has been received! Thank you for writing.</p>
                   </div>
-                  <div class="alert-close "><a class="btn-custom waves-effect " href="#0 ">Close Me</a></div>
+                  <div class="alert-close"><a class="btn-custom waves-effect" href="#0">Close Me</a></div>
                 </div>
-                <div class="alert-content alert-error w-block ">
-                  <div class="alert-icon "><span class="fa fa-times-circle "></span></div>
-                  <div class="alert-title ">Error</div>
-                  <div class="alert-desc ">
+                <div class="alert-content alert-error w-block">
+                  <div class="alert-icon"><span class="fa fa-times-circle"></span></div>
+                  <div class="alert-title">Error</div>
+                  <div class="alert-desc">
                     <p>Message couldn't be sent due to server problem.</p>
                   </div>
-                  <div class="alert-close "><a class="btn-custom waves-effect " href="#0 ">Close Me</a></div>
+                  <div class="alert-close"><a class="btn-custom waves-effect" href="#0">Close Me</a></div>
                 </div>
               </div>
             </div>
@@ -522,15 +531,15 @@
 
   <!-- Footer Section -->
 
-  <footer class="footer ">
-    <div class="container ">
-      <div class="row ">
-        <div class="col s12 back-to-top-wrapper ">
-          <a class="btn-circle waves-effect back-to-top tooltipped animatescroll-link wow zoomIn " data-wow-duration="0.7s " data-wow-delay="0.3s " data-wow-offset="0 " data-position="top " data-delay="50 " data-tooltip="Go To Top " onclick="$(
-                'html').animatescroll(); " href="#0 ">
-							<span class="fa fa-angle-up "></span>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 back-to-top-wrapper">
+          <a class="btn-circle waves-effect back-to-top tooltipped animatescroll-link wow zoomIn" data-wow-duration="0.7s" data-wow-delay="0.3s" data-wow-offset="0" data-position="top" data-delay="50" data-tooltip="Go To Top" onclick="$(
+                'html').animatescroll();" href="#0">
+							<span class="fa fa-angle-up"></span>
 						</a>
-          <div class="copyright-text ">
+          <div class="copyright-text">
             &copy; All rights Reserved.
           </div>
         </div>
@@ -560,6 +569,7 @@
   <script type="text/javascript" src="js/owl.carousel.js"></script>
   <script type="text/javascript" src="js/wow.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/masonry.js"></script>
   <!-- navmeny -->
 
 
