@@ -183,6 +183,7 @@ input[type=submit]:hover {
 
 #event a {
   font-size: 120%;
+  position: relative;
   text-transform: uppercase;
   text-align: left;
   line-height: 4.5em;
@@ -190,6 +191,13 @@ input[type=submit]:hover {
   height: 90px;
   width: 100%;
   line-height: 90px;
+}
+
+.p-all {
+  font-size: 90%;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 75px;
 }
 
 #event img {
@@ -228,6 +236,7 @@ input[type=submit]:hover {
   text-align: left;
   letter-spacing: 0.6px;
   line-height: 1.7em;
+  font-size: 100%;
 }
 
 #sessions li:first-child {
@@ -249,9 +258,71 @@ input[type=submit]:hover {
 #details p {
   padding: 0px 20px 0px 20px;
   margin: 2em 0 0 0;
+  font-size: 100%;
 }
 
 p.detail-third {
   margin-top: 2em;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .p-all {
+    /*font-size: 0;*/
+  }
+
+  .third {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #event img {
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 18px;
+    justify-content: center;
+  }
+
+  #event a {
+    float: left;
+    width: 25%;
+    height: 25px;
+  }
+
+  #sessions a {
+    font-size: 100%;
+  }
+
+  #sessions li {
+    text-align: center;
+  }
+
+  #sessions p {
+    margin-top: 3em;
+  }
+
+  #sessions li:first-child {
+    border-top: none;
+    padding-top: 3em;
+  }
+
+  #details p {
+    margin: 1em 0 0 0;
+    text-align: center;
+  }
+
+  .third p {
+    padding: 0 10px 0px 10px;
+    text-align: left;
+    line-height: 1.4em;
+  }
+
+  .p-all {
+    font-size: 75%;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 5px;
+  }
+
 }

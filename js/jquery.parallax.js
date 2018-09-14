@@ -6,7 +6,7 @@
  *              If no gyroscope is available, the cursor position is used.
  */
 ;
-(function($, window, document, undefined) {
+(function($, window, document) {
 
   // Strict Mode
   'use strict';

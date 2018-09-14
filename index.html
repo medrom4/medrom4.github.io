@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
 
-
+  <link rel="stylesheet" href="css/c08.css">
   <link rel="stylesheet" href="css/general_styling.css">
   <link rel="stylesheet" href="css/preloader.css">
   <link rel="stylesheet" href="css/header.css">
@@ -146,10 +146,10 @@
     <div class="section-content">
       <div class="container">
         <div class="row">
-          <div class="col s12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+          <div class="col s12 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
             <div class="col s12 w-block shadow-bg pd-0">
-              <div class="col m5 s12 about-img parallax-layer al-center pd-50">
-                <div class="about-img-content image-bg shadow-bg layer" style="background: url(&quot;img/me.jpg&quot;) center top / cover no-repeat;">
+              <div class="col m5 s12 about-img parallax-layer al-center pd-50" style="position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                <div class="about-img-content image-bg shadow-bg layer" data-depth="0.1" data-image-bg="img/me.jpg" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(-1.29042px, 1.19786px, 0px); transform-style: preserve-3d; backface-visibility: hidden; background: rgba(0, 0, 0, 0) url(&quot;img/me.jpg&quot;) no-repeat center top / cover;">
                   <a href="https://drive.google.com/file/d/1xIYfkxtPaFPg4wFamhp9gMsIsl8MvP86/view?usp=sharing" class="btn-circle tooltipped layer shadow-bg" data-position="top" data-delay="50" data-tooltip="Download Resume" data-depth="0.25" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-3.22605px, 2.99466px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><span class="fa fa-download"></span></a>
                 </div>
                 <div class="about-name">Ramanovich Aliaksei</div>
@@ -208,10 +208,10 @@
                 <div id="delet-educ" style="width: 100%;">
                   <div class="third">
                     <div id="event" style="width: 100%;">
-                      <a class="a-all" id="ca" href="#"><img src="img/map-cn.png" alt="school" />. . .-2008</a>
-                      <a class="a-all" id="tx" href="#"><img src="img/map-tx.png" alt="college" />2008-2010</a>
-                      <a class="a-all" id="ny" href="#"><img src="img/map-ny.png" alt="university" />2012-2017</a>
-                      <a class="a-all" id="cn" href="#"><img src="img/map-ca.png" alt="it-academy" />2017-. . .</a>
+                      <a id="ca" href="#"><img src="img/map-cn.png" alt="school" /><p class="p-all">. . .-2008</p></a>
+                      <a id="tx" href="#"><img src="img/map-tx.png" alt="college" /><p class="p-all">2008-2010</p></a>
+                      <a id="ny" href="#"><img src="img/map-ny.png" alt="university" /><p class="p-all">2012-2017</p></a>
+                      <a id="cn" href="#"><img src="img/map-ca.png" alt="it-academy" /><p class="p-all">2017-. . .</p></a>
                     </div>
                   </div>
                   <div class="third">
@@ -359,97 +359,82 @@
         </div>
         <div class="col s12">
           <div class="reference-wrapper col s12 w-block shadow-bg">
-            <div class="reference-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
+            <div class="reference-carousel">
 
               <!-- Single Reference -->
-              
-              <div class="owl-wrapper-outer">
-                <div class="owl-wrapper" style="width: 7080px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);">
-                  <div class="owl-item" style="width: 1180px;">
-                    <div class="item">
-                      <div class="reference-img">
-                        <img class="" src="img/r-1.png" alt="">
-                      </div>
-                      <div class="reference-author">
-                        Aliaksandr Ramanovich
-                      </div>
-                      <div class="reference-company">
-                        EPAM
-                      </div>
-                      <div class="reference-content">
-                        <p>
-                          Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
-                          sed, ne his explicari sadipscing.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
 
-                  <!--/ Single Reference -->
-
-                  <!-- Single Reference -->
-
-                  <div class="owl-item" style="width: 1180px;">
-                    <div class="item">
-                      <div class="reference-img">
-                        <img class="" src="img/r-2.png" alt="">
-                      </div>
-                      <div class="reference-author">
-                        Sofia Ramanovich
-                      </div>
-                      <div class="reference-company">
-                        IBA Group
-                      </div>
-                      <div class="reference-content">
-                        <p>
-                          Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
-                          sed, ne his explicari sadipscing.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!--/ Single Reference -->
-
-                  <!-- Single Reference -->
-
-                  <div class="owl-item" style="width: 1180px;">
-                    <div class="item">
-                      <div class="reference-img">
-                        <img class="" src="img/r-1.png" alt="">
-                      </div>
-                      <div class="reference-author">
-                        Jon Snow
-                      </div>
-                      <div class="reference-company">
-                        SoftClub
-                      </div>
-                      <div class="reference-content">
-                        <p>
-                          Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
-                          sed, ne his explicari sadipscing.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+              <div class="item">
+                <div class="reference-img">
+                  <img class="" src="img/r-1.png" alt="">
+                </div>
+                <div class="reference-author">
+                  Aliaksandr Ramanovich
+                </div>
+                <div class="reference-company">
+                  EPAM
+                </div>
+                <div class="reference-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
+                    sed, ne his explicari sadipscing.
+                  </p>
                 </div>
               </div>
-              <!--/ Single Reference -->
-
-              <!-- Single Reference -->
 
               <!--/ Single Reference -->
 
               <!-- Single Reference -->
 
-              <!--/ Single Reference -->
-              <div class="owl-controls clickable">
-                <div class="owl-pagination">
-                  <div class="owl-page active"><span class=""></span></div>
-                  <div class="owl-page"><span class=""></span></div>
-                  <div class="owl-page"><span class=""></span></div>
+              <div class="item">
+                <div class="reference-img">
+                  <img class="" src="img/r-2.png" alt="">
+                </div>
+                <div class="reference-author">
+                  Sofia Ramanovich
+                </div>
+                <div class="reference-company">
+                  IBA Group
+                </div>
+                <div class="reference-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
+                    sed, ne his explicari sadipscing.
+                  </p>
                 </div>
               </div>
+
+              <!--/ Single Reference -->
+
+              <!-- Single Reference -->
+
+              <div class="item">
+                <div class="reference-img">
+                  <img class="" src="img/r-1.png" alt="">
+                </div>
+                <div class="reference-author">
+                  Jon Snow
+                </div>
+                <div class="reference-company">
+                  SoftClub
+                </div>
+                <div class="reference-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, ne usu eius animal, nam accusata conceptam ea. Qui ut prima aliquip reprehendunt, eos ex nibh libris delectus, an has liber melius constituto. Epicuri mediocrem vis ex. Cu nec choro molestiae quaerendum, ei natum lorem dissentias
+                    sed, ne his explicari sadipscing.
+                  </p>
+                </div>
+              </div>
+
+              <!--/ Single Reference -->
+
+              <!-- Single Reference -->
+
+              <!--/ Single Reference -->
+
+              <!-- Single Reference -->
+
+              <!--/ Single Reference -->
+
             </div>
           </div>
         </div>
