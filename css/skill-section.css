@@ -1,0 +1,26 @@
+/* --- Skill Section --- */
+
+.skill-wrapper{
+	margin-top: 50px;
+}
+
+.skill-carousel{
+	padding: 10px;
+}
+
+.skill-carousel .item{
+	padding: 25px;
+}
+
+.skill-carousel .item img{
+	opacity: 0.5;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.skill-carousel .item:hover img{
+	opacity: 1;
+}

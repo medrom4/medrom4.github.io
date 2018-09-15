@@ -235,7 +235,7 @@
 	/* --- All Carousels --- */
 
 	function initCarousel() {
-		$('.client-carousel').owlCarousel({
+		$('.skill-carousel').owlCarousel({
 			pagination: false,
 			navigation: false,
 			autoPlay: true,
