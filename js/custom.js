@@ -28,6 +28,7 @@
 	/* --- Initializing All Functions --- */
 
 	initHeroHeight();
+	initParallax();
 	initSectionHighlight();
 	initSearchArea();
 	initPreloaderFade();
@@ -67,7 +68,7 @@
 					$('.main-nav > ul > li > a').removeClass('active-nav');
 					$(current_section_link).addClass('active-nav');
 				}
-			}, { offset: function() { return -$(this).height() + 130; } });
+			}, { offset: function() { return -$(this).height() + 230; } });
 		});
 	}
 
@@ -76,6 +77,18 @@
 
 	function initHeroHeight() {
 		$('.hero-height').height($(window).height());
+	}
+
+
+	/* --- Parallax Background --- */
+
+	function initParallax() {
+		if (!device.tablet() && !device.mobile()) {
+			$('.parallax-section').each(function() {
+				$('.parallax-section').parallaxScroll("50%", 0.3);
+			});
+			$('.parallax-layer').parallax();
+		}
 	}
 
 
