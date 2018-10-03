@@ -1,0 +1,480 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background: #E4E4E4;
+	color: #292929;
+	color: rgba(0, 0, 0, 0.82);
+	font: normal 100% Cambria, Georgia, serif;
+	-moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	-webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	-webkit-text-size-adjust: none;
+	text-align: justify;
+}
+
+ul.navb {
+	display: none;
+}
+
+a {
+	color: #890101;
+	text-decoration: none;
+	-moz-transition: 0.2s color linear;
+	-webkit-transition: 0.2s color linear;
+	transition: 0.2s color linear;
+}
+
+p.fig img {
+	max-width: 40vw;
+	height: auto;
+}
+
+a:hover {
+	color: #DF3030;
+}
+
+#page {
+	background: url("../img/rag.png") repeat-x;
+	padding: 2em 0;
+}
+
+.inner,
+.section-infa__bottom,
+.footer {
+	margin: 0 auto;
+	width: 93.75%;
+}
+
+.section-infa__bottom>p,
+.section-infa__bottom>h2 {
+	text-indent: 2em;
+}
+
+.section-infa__bottom>h2 {
+	text-align: center;
+	font-size: 120%;
+	margin-bottom: 1em;
+}
+
+.mast {
+	float: left;
+	width: 35%;
+}
+
+h1 {
+	background: url("../img/logo-bg.png") no-repeat 50% 0;
+
+}
+
+h1 a {
+	padding-top: 117px;
+	height: 162px;
+	display: block;
+	text-align: center;
+}
+
+.intro {
+	margin-top: 10px;
+}
+
+ul.nav {
+	border-top: 1px solid #888583;
+	margin: 2em auto 0;
+	width: 64.379%;
+}
+
+ul.nav a {
+	background: url("../img/ornament.png") no-repeat 0 100%;
+	font: bold 14px/1.2 "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	display: block;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 1em 0.5em 3em;
+	margin-bottom: -1em;
+	text-transform: uppercase;
+}
+
+ul.nav a:hover {
+	background-position: 50% 100%;
+}
+
+li.first a {
+	border-top: 1px solid #FFF9EF;
+	padding-top: 1.25em;
+}
+
+ul.nav i {
+	font: normal 10px Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	display: block;
+	letter-spacing: 0.05em;
+}
+
+.footer {
+	background: url("../img/ornament.png") 50% 0 repeat-x;
+	font-size: 12px;
+	text-align: center;
+	padding: 40px 0 20px;
+}
+
+.footer p {
+	margin-bottom: 0.5em;
+}
+
+p.fig {
+	text-align: center;
+	text-indent: 0em;
+	margin-top: 1em;
+}
+
+.picture_all {
+	text-align: center;
+	margin-bottom: 1em;
+	text-indent: 0em;
+}
+
+@media (max-width: 600px) {
+	ul.navb {
+		display: none;
+	}
+
+	.inner {
+		position: relative;
+	}
+
+	.mast,
+	.footer {
+		float: none;
+		width: 93.75%;
+	}
+
+	h1 {
+		background: none;
+	}
+
+	h1 a {
+		padding-top: 70px;
+		height: 87px;
+	}
+
+	ul.nav {
+		background: url("../img/ornament.png") no-repeat 0 -20px;
+		border-top: none;
+		margin: 0 auto;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	ul.nav li {
+		float: left;
+		margin-right: 3.3%;
+		width: 31%;
+	}
+
+	ul.nav a,
+	ul.nav i {
+		font: 10px Helvetica, Arial, sans-serif;
+		letter-spacing: 0;
+	}
+
+	ul.nav a:hover,
+	ul.nav a:focus {
+		background-position: 0 100%;
+	}
+
+	li.first a {
+		border-top: none;
+		padding-top: 1em;
+	}
+
+	ul.nav li.last {
+		margin-right: 0;
+	}
+
+	.picture_all,
+	p.fig {
+		display: none;
+	}
+}
+
+@media (min-width: 1300px) {
+	h2,
+	p {
+		font-size: 113%;
+	}
+
+	em {
+		font-size: 102%;
+	}
+
+	b {
+		font-size: 100%;
+	}
+
+	.inner {
+		margin: 0 auto;
+		width: 93.75%;
+	}
+
+	ul.nav a {
+		font: bold 16px/1.2 "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	}
+
+	ul.nav i {
+		font: normal 12px Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	}
+
+	.section-infa__bottom {
+		float: left;
+		width: 62%;
+		margin-left: 35%;
+	}
+
+	.mast {
+		float: left;
+		width: 100%;
+	}
+
+	h1 {
+		position: absolute;
+		width: 279px;
+		height: 284px;
+		margin-left: 80px;
+	}
+
+	h1 a {
+		padding-top: 117px;
+		height: 25px;
+		display: block;
+		text-align: center;
+	}
+
+	ul.navb {
+		margin-left: 3em;
+		margin-top: 18em;
+		display: block;
+		opacity: .6;
+		padding: 0px;
+		position: absolute;
+		transition: opacity .3s ease-in-out;
+	}
+
+	ul.navb:hover {
+		opacity: 1;
+	}
+
+	ul.navb li {
+		height: 80px;
+		overflow: hidden;
+		transition: width .2s ease-in-out, height .2s ease-in-out .2s;
+		width: 80px;
+	}
+
+	ul.navb li:hover {
+		width: 350px;
+		height: 163px;
+	}
+
+	ul.navb li a {
+		background: #C8C8C8;
+		color: #fff;
+		cursor: pointer;
+		display: block;
+		height: 40px;
+		line-height: 40px;
+		margin: 1px;
+		padding-left: 15px;
+		transition-duration: .2s;
+		transition-property: all;
+		transition-timing-function: ease-in-out;
+		width: 350px;
+
+	}
+
+	ul.navb li a:hover {
+		background: #2fc5ff;
+	}
+
+	ul.navb li a:first-child {
+		font-size: 1.1em;
+		height: 80px;
+		line-height: 80px;
+		position: relative;
+		text-indent: 85px;
+	}
+
+	ul.navb li a:first-child::before {
+		content: "";
+		position: absolute;
+		display: block;
+		height: 70px;
+		width: 70px;
+		top: 5px;
+		left: 5px;
+	}
+
+	li.obmenu a:first-child::before {
+		background: url(../img/bones.png) center no-repeat;
+	}
+
+	li.tylovo a:first-child::before {
+		background: url(../img/skeleton.png) center no-repeat;
+	}
+
+	li.golovaa a:first-child::before {
+		background: url(../img/kostgolova.png) center no-repeat;
+	}
+
+	li.verhkost a:first-child::before {
+		background: url(../img/kostverh.png) center no-repeat;
+	}
+
+	li.gogob a:first-child::before {
+		background: url(../img/kostnk.png) center no-repeat;
+	}
+
+	ul.nav {
+		float: right;
+		margin: 40px 0 1em;
+		text-align: center;
+		width: 65.9%;
+	}
+
+	ul.nav {
+		border-top: none;
+	}
+
+	ul.nav li.first a {
+		border-top: none;
+		padding-top: 1em;
+	}
+
+	ul.nav li {
+		float: left;
+		margin-right: 3.3%;
+		width: 31.1%;
+	}
+
+	div.footer {
+		margin-top: 3em;
+		width: 93.75%;
+	}
+
+	ul.nav li.last {
+		margin-right: 0;
+	}
+
+	.footer {
+		clear: both;
+		float: none;
+		width: 100%;
+	}
+
+	p.fig {
+		text-align: center;
+	}
+}
