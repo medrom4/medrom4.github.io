@@ -1,16 +1,5 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,84 +7,131 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
 
 /* Basic
 */
 
-html, body {
-    width:100%;
-    height:100%;
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
 
 .backwrap {
     background: #CBB878;
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    width:100%;
-    height:100%;
-    position:fixed;
-    left:0;
-    top:0;
-    z-index:1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .back-shapes {
-    width:100%;
-    height:100%;
-    position:relative;
-    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .back-shapes img {
     opacity: 0.7;
-    position:absolute;
-    width:2%;
+    position: absolute;
+    width: 2%;
+}
+
+
+/* download */
+
+.download {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.download img {
+    max-width: 100% !important;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 
 @media screen and (max-width: 1400px) {
     .back-shapes img {
-        width:3%;
+        width: 3%;
     }
     .back-shapes em {
-        font-size:260%!important;
+        font-size: 260%!important;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .back-shapes img {
-        width:4%;
+        width: 4%;
     }
     .back-shapes em {
-        font-size:230%!important;
+        font-size: 230%!important;
     }
 }
 
 @media screen and (max-width: 600px) {
     .back-shapes img {
-        width:5%;
+        width: 5%;
     }
     .back-shapes em {
-        font-size:180%!important;
+        font-size: 180%!important;
     }
 }
 
-.floating{animation-name:floating;-webkit-animation-name:floating;animation-duration:5s;-webkit-animation-duration:5s;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;}
-@keyframes floating{0%{transform:translateY(0%) rotate(-55deg);}
-50%{transform:translateY(300%) rotate(55deg);}
-100%{transform:translateY(0%) rotate(-55deg);}
+.floating {
+    animation-name: floating;
+    -webkit-animation-name: floating;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
 }
-@-webkit-keyframes floating{0%{-webkit-transform:translateY(0%);}
-50%{-webkit-transform:translateY(300%);}
-100%{-webkit-transform:translateY(0%);}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0%) rotate(-55deg);
+    }
+    50% {
+        transform: translateY(300%) rotate(55deg);
+    }
+    100% {
+        transform: translateY(0%) rotate(-55deg);
+    }
 }
-@-webkit-keyframes floating{0%{-webkit-transform:translateY(0%);}
-50%{-webkit-transform:translateY(300%);}
-100%{-webkit-transform:translateY(0%);}
+
+@-webkit-keyframes floating {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+    50% {
+        -webkit-transform: translateY(300%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes floating {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+    50% {
+        -webkit-transform: translateY(300%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
 }
 
 
@@ -103,7 +139,7 @@ html, body {
 */
 
 @media (max-width:767px) {
-    .container{
+    .container {
         width: 100%;
         margin: 0;
         padding: 0;
@@ -111,19 +147,21 @@ html, body {
 }
 
 @media (min-width:768px) {
-    .container{
+    .container {
         width: 750px;
     }
 }
 
 @media (min-width:992px) {
-    .container{
+    .container {
         width: 970px;
     }
 }
 
 @media (min-width:1200px) {
-    .container{width: 1200px;}
+    .container {
+        width: 1200px;
+    }
 }
 
 @media (max-width:1199px) {
