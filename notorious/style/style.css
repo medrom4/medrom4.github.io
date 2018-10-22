@@ -48,7 +48,7 @@ a {
 }
 
 .color {
-    color: #D4502A;
+    color: #D42A78;
     font-size: 11px;
 }
 
@@ -70,7 +70,7 @@ h3 {
 }
 
 h5 {
-    color: #D4502A;
+    color: #D42A78;
 }
 
 
@@ -114,7 +114,7 @@ h5 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #D4502A;
+    background-color: #D42A78;
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -365,7 +365,7 @@ h5 {
 }
 
 .box-primary-nav .box-label {
-    color: #D4502A;
+    color: #D42A78;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 17px;
@@ -421,7 +421,7 @@ h5 {
 }
 
 b i:last-child {
-    color: #D4502A !important;
+    color: #D42A78 !important;
 }
 
 .box-intro h5 {
@@ -458,7 +458,7 @@ b i:last-child {
     height: 6px;
     margin: 6px auto;
     border-radius: 4px;
-    background: #D4502A;
+    background: #D42A78;
     -webkit-animation: finger 2s infinite;
     animation: finger 2s infinite;
 }
@@ -515,6 +515,163 @@ b i:last-child {
 
 
 
+/* ---- text rotate ---- */
+
+.box-headline {
+    font-size: 130px;
+    line-height: 1.0;
+}
+
+.box-words-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.box-words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+}
+
+.box-words-wrapper b.is-visible {
+    position: relative;
+}
+
+.no-js .box-words-wrapper b {
+    opacity: 0;
+}
+
+.no-js .box-words-wrapper b.is-visible {
+    opacity: 1;
+}
+
+.box-headline.rotate-2 .box-words-wrapper {
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+.box-headline.rotate-2 i,
+.box-headline.rotate-2 em {
+    display: inline-block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.box-headline.rotate-2 b {
+    opacity: 0;
+}
+
+.box-headline.rotate-2 i {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(-20px) rotateX(90deg);
+    transform: translateZ(-20px) rotateX(90deg);
+    opacity: 0;
+}
+
+.is-visible .box-headline.rotate-2 i {
+    opacity: 1;
+}
+
+.box-headline.rotate-2 i.in {
+    -webkit-animation: box-rotate-2-in 0.4s forwards;
+    animation: box-rotate-2-in 0.4s forwards;
+}
+
+.box-headline.rotate-2 i.out {
+    -webkit-animation: box-rotate-2-out 0.4s forwards;
+    animation: box-rotate-2-out 0.4s forwards;
+}
+
+.box-headline.rotate-2 em {
+    -webkit-transform: translateZ(20px);
+    transform: translateZ(20px);
+}
+
+.no-csstransitions .box-headline.rotate-2 i {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 0;
+}
+
+.no-csstransitions .box-headline.rotate-2 i em {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.no-csstransitions .box-headline.rotate-2 .is-visible i {
+    opacity: 1;
+}
+
+@-webkit-keyframes box-rotate-2-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(90deg);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(-10deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0deg);
+    }
+}
+
+@keyframes box-rotate-2-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(90deg);
+        transform: translateZ(-20px) rotateX(90deg);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(-10deg);
+        transform: translateZ(-20px) rotateX(-10deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0deg);
+        transform: translateZ(-20px) rotateX(0deg);
+    }
+}
+
+@-webkit-keyframes box-rotate-2-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0);
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-100deg);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-90deg);
+    }
+}
+
+@keyframes box-rotate-2-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0);
+        transform: translateZ(-20px) rotateX(0);
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-100deg);
+        transform: translateZ(-20px) rotateX(-100deg);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-90deg);
+        transform: translateZ(-20px) rotateX(-90deg);
+    }
+}
+
+
 
 
 
@@ -547,7 +704,7 @@ b i:last-child {
 
 .portfolio .categories-grid .categories ul li a.active {
     margin-left: 0;
-    background-color: #D4502A;
+    background-color: #D42A78;
     padding: 0px 20px;
     color: white;
     border-radius: 25px;
@@ -604,7 +761,7 @@ b i:last-child {
 .portfolio_item .portfolio_item_hover .item_info em {
     font-style: normal;
     display: inline-block;
-    background-color: #D4502A;
+    background-color: #D42A78;
     padding: 5px 20px;
     border-radius: 25px;
     color: #333;
@@ -718,7 +875,7 @@ footer img {
 
 .no-touch .cd-top:hover,
 .no-touch .cd-top:focus {
-    background-color: #D4502A;
+    background-color: #D42A78;
     opacity: 1;
     color: #fff;
 }
@@ -841,7 +998,7 @@ footer img {
     resize: none;
 }
 
-.textarea-contact > span {
+.textarea-contact>span {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -876,7 +1033,7 @@ footer img {
     color: #9a9a9a;
 }
 
-.input-contact > span {
+.input-contact>span {
     position: absolute;
     top: 50%;
     left: 20px;
@@ -890,9 +1047,9 @@ footer img {
     z-index: 1;
 }
 
-.input-contact > span.active,
-.textarea-contact > span.active {
-    color: #D4502A;
+.input-contact>span.active,
+.textarea-contact>span.active {
+    color: #D42A78;
     font-size: 10px;
     top: 0px;
     left: 5px;
@@ -913,7 +1070,7 @@ textarea:focus {
     height: 30px;
     width: 30px;
     display: inline-block;
-    background: #D4502A;
+    background: #D42A78;
     text-align: center;
     line-height: 33px;
     margin-right: 10px;
@@ -927,7 +1084,7 @@ textarea:focus {
 }
 
 .btn-box {
-    background: #D4502A;
+    background: #D42A78;
     padding: 10px 50px;
     border-radius: 0;
     color: #fff;
@@ -939,7 +1096,7 @@ textarea:focus {
 
 .btn-box:hover,
 .btn-box:focus {
-    background: #D4502A;
+    background: #D42A78;
     color: #fff;
 }
 
@@ -959,7 +1116,7 @@ textarea:focus {
 
 .cat-ul li i {
     margin-right: 10px;
-    color: #D4502A;
+    color: #D42A78;
 }
 
 
