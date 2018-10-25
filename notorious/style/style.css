@@ -337,7 +337,7 @@ h5 {
 .box-primary-nav li {
     font-size: 22px;
     font-size: 1.375rem;
-    font-weight: 300;
+    font-weight: 200;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: .2em 0;
@@ -352,7 +352,7 @@ h5 {
     transition: all 0.2s;
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 200;
 }
 
 .box-primary-nav a:focus {
@@ -367,8 +367,16 @@ h5 {
 .box-primary-nav .box-label {
     color: #D42A78;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 17px;
+    margin: 2.4em 0 .8em;
+}
+
+.notorious {
+    color: #D42A78;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 35px;
     margin: 2.4em 0 .8em;
 }
 
