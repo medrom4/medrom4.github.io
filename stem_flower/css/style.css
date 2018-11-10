@@ -565,12 +565,12 @@ footer p {
 
 @media (max-width: 575.98px) {
 	header div.call-to h1 {
-		margin: 80px 20px 0px 20px;
+		margin: 150px 20px 0px 20px;
 		font-size: 122%;
 		line-height: 200%;
 	}
 
-	header {
+	style-promo {
 		height: 100vh;
 		background-image: url(../img/bg_f.jpg);
 		background-repeat: no-repeat;
@@ -1187,9 +1187,9 @@ footer p {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 	nav.navbar li.nav-item a.nav-link {
-		font-size: 1.06rem;
-	}
-
+	font-size: 1.06rem;
+}
+	
 	section.our-services div p,
 	div.services-2 div p {
 		padding-right: 10px;
