@@ -30,7 +30,8 @@ a i.fa:hover {
 
 nav.navbar li.nav-item a.nav-link {
 	font-size: 1.1rem;
-	margin-right: 10px;
+	margin-right: 9px;
+	margin-left: 8px;
 }
 
 nav.navbar li.nav-item a.nav-link:hover {
@@ -42,44 +43,44 @@ nav.navbar li.nav-item a.nav-link:hover {
 	font-size: 25px;
 }
 
-header {
+.style-promo {
 	height: 100vh;
 	background-image: url(../img/bg_f.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
-header div.call-to h1 {
+div.call-to h1 {
 	margin-top: 250px;
 	text-align: center;
 	font-size: 72px;
 }
 
-header div.call-to h1 span {
+div.call-to h1 span {
 	text-align: center;
 	font-size: 72px;
 }
 
-header div.call-to h1 span.letter {
+div.call-to h1 span.letter {
 	color: #fff;
 }
 
-header div.call-to h1 span.letter:hover {
+div.call-to h1 span.letter:hover {
 	color: #CF96BC;
 }
 
-header div.call-to h1 span {
+div.call-to h1 span {
 	color: #CF96BC;
 }
 
-header div.call-to p {
+div.call-to p {
 	color: #fff;
 	font-size: 24px;
 	text-align: center;
 	margin-top: 20px;
 }
 
-header div.call-to div a {
+div.call-to div a {
 	display: block;
 	width: 150px;
 	height: 50px;
@@ -94,18 +95,18 @@ header div.call-to div a {
 	text-decoration: none;
 }
 
-header div.call-to div a:hover {
+div.call-to div a:hover {
 	color: #1F2F2E;
 	border: 1px solid #1F2F2E;
 	background-color: rgba(207, 150, 188, 0.7);
 	transition: .2s;
 }
 
-header div.call-to div h1 span:hover {
+div.call-to div h1 span:hover {
 	color: #fff;
 }
 
-header div.call-to div h1 p:hover {
+div.call-to div h1 p:hover {
 	color: #fff;
 }
 
@@ -564,8 +565,8 @@ footer p {
 
 @media (max-width: 575.98px) {
 	header div.call-to h1 {
-		margin: 90px 20px 0px 20px;
-		font-size: 92%;
+		margin: 80px 20px 0px 20px;
+		font-size: 122%;
 		line-height: 200%;
 	}
 
@@ -813,7 +814,7 @@ footer p {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 	header div.call-to h1 {
-		margin: 120px 20px 0px 20px;
+		margin: 200px 20px 0px 20px;
 		font-size: 28px;
 		line-height: 120%;
 	}
@@ -1000,7 +1001,7 @@ footer p {
 	header div.call-to h1 {
 		font-size: 48px;
 		line-height: 140%;
-		margin: 140px 20px 0px 20px;
+		margin: 160px 20px 0px 20px;
 	}
 
 	header div.call-to p {
@@ -1185,6 +1186,10 @@ footer p {
 
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	nav.navbar li.nav-item a.nav-link {
+		font-size: 1.06rem;
+	}
+
 	section.our-services div p,
 	div.services-2 div p {
 		padding-right: 10px;
