@@ -565,7 +565,7 @@ footer p {
 
 @media (max-width: 575.98px) {
 	header div.call-to h1 {
-		margin: 150px 20px 0px 20px;
+		margin: 130px 20px 0px 20px;
 		font-size: 122%;
 		line-height: 200%;
 	}
@@ -815,7 +815,7 @@ footer p {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 	header div.call-to h1 {
-		margin: 200px 20px 0px 20px;
+		margin: 260px 20px 0px 20px;
 		font-size: 28px;
 		line-height: 120%;
 	}
@@ -1002,7 +1002,7 @@ footer p {
 	header div.call-to h1 {
 		font-size: 48px;
 		line-height: 140%;
-		margin: 160px 20px 0px 20px;
+		margin: 200px 20px 0px 20px;
 	}
 
 	header div.call-to p {
