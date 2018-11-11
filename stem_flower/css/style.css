@@ -571,6 +571,7 @@ footer p {
 	}
 
 	style-promo {
+		width: 100vw;
 		height: 100vh;
 		background-image: url(../img/bg_f.jpg);
 		background-repeat: no-repeat;
@@ -684,7 +685,7 @@ footer p {
 	}
 
 	section.footer {
-		height: 100vh;
+		width: 100vw;
 	}
 
 	section.footer div.contact {
@@ -820,7 +821,7 @@ footer p {
 	}
 
 	header {
-		height: 100vh;
+		width: 100vw;
 		background-image: url(../img/bg_f.jpg);
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -1012,7 +1013,7 @@ footer p {
 	}
 
 	header {
-		height: 100vh;
+		width: 100vw;
 	}
 
 	header div.call-to div a {
@@ -1187,9 +1188,9 @@ footer p {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 	nav.navbar li.nav-item a.nav-link {
-	font-size: 1.06rem;
-}
-	
+		font-size: 1.06rem;
+	}
+
 	section.our-services div p,
 	div.services-2 div p {
 		padding-right: 10px;
