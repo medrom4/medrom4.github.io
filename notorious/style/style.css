@@ -156,6 +156,11 @@ h5 {
 
 /* ---- headr ---- */
 
+.hydrated {
+    margin-top: 16px;
+    position: absolute;
+}
+
 .box-header {
     position: absolute;
     top: 0;
