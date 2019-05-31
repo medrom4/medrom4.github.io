@@ -5,9 +5,26 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Контакты</title>
+	<title>Greenway - Наши контакты</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+	<!-- SEO -->
+	<meta name="description"
+		content="Станьте частью нашей команды и сделайте сильный бизнес!Маркетинг план нашей компании очень прост и щедр, поэтому добиться успеха может каждый! Пишите, звоните нам в любое удобное для Вас время, мы поможем стать независимым!">
+	<meta name="keywords"
+		content="Greenways,Greenway,гринвейбеларусь,гринвейминск,компания GreenWay купить продукцию,магазин GreenWay,Минск,Беларусь,Greenways офф сайт,Greenways оффициальный сайт,гринвей продукция купить рб,гринвей сайт беларусь,гринвей отзывы,григвей форум,гринвей лохотрон,AQUAmagic, Greenway блр, Гринвей блр, салфетки Гринвей в Беларуси, салфетки Аквамеджик, уборка без химии,уборка,салфетки,губки,каталог,стоимость,акции,недорого,контакты,AVITALL,Biofiber,Ecopam,Sharme,Sharme essential,Halthberry,Biotrim,AQUAMAGIC,Aquamatic,Revitall,iGen,TeaVitall">
+	<meta property="og:title" content="GreenWay | Стань независимым прямо сейчас!">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://mlmgreenway.ru/">
+	<meta property="og:site_name" content="mlmgreenway">
+	<meta property="og:image" content="http://mlmgreenway.ru/img/Greenways.png">
+	<meta property="og:site_name" content="mlmgreenway.ru">
+	<meta property="og:description"
+		content="Маркетинг план нашей компании очень прост и щедр, поэтому добиться успеха может каждый! Пишите, звоните нам в любое удобное для Вас время, мы поможем стать независимым!">
+	<meta itemprop="image" content="http://mlmgreenway.ru/img/Greenways.png">
+	<!-- /SEO -->
 
 	<!-- GLOBAL MANDATORY STYLES -->
 	<link rel="shortcut icon" href="img/Greenways.png" type="image/png">
@@ -122,7 +139,7 @@
 	<!-- End Contact List -->
 
 	<!-- Google Map -->
-		<div id="map" class="map height-400"></div>
+	<div id="map" class="map height-400"></div>
 
 
 	<!--========== END PAGE LAYOUT ==========-->
@@ -151,15 +168,23 @@
 						<!-- End List -->
 					</div>
 
-					<div class="col-sm-6 sm-margin-b-30">
+					<form class="col-sm-6 sm-margin-b-30">
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Site Name">
+						<input type="hidden" name="admin_email" value="medikroma@gmail.com">
+						<input type="hidden" name="form_subject" value="Запрос на сотрудничество.">
+						<!-- END Hidden Required Fields -->
+
 						<h2 class="color-white">Запрос на сотрудничество</h2>
-						<input type="text" class="form-control footer-input margin-b-20" placeholder="Ваше имя" required>
-						<input type="email" class="form-control footer-input margin-b-20" placeholder="Почта" required>
-						<input type="text" class="form-control footer-input margin-b-20" placeholder="Телефон" required>
-						<textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Ваш текст"
-							required></textarea>
+						<input type="text" name="Имя" class="form-control footer-input margin-b-20" placeholder="Ваше имя" required>
+						<input type="text" name="E-mail" class="form-control footer-input margin-b-20" placeholder="Почта" required>
+						<input type="text" name="Телефон" class="form-control footer-input margin-b-20" placeholder="Телефон"
+							required>
+						<textarea name="Текстовое сообщение" class="form-control footer-input margin-b-30" rows="6"
+							placeholder="Ваш текст" required></textarea>
 						<button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Отправить</button>
-					</div>
+					</form>
 				</div>
 				<!--// end row -->
 			</div>
@@ -188,6 +213,10 @@
 
 	<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 	<!-- CORE PLUGINS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="emailScript.js"></script>
+
+
 	<script src="vendor/jquery.min.js"></script>
 	<script src="vendor/jquery-migrate.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>

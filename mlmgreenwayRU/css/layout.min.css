@@ -374,6 +374,15 @@ body > div.parallax-window > div > p {
 	margin-top: 50px !important;
 }
 
+.col-sm-offset-1-l {
+	margin-right: 8.33333333% !important;
+}
+
+.colorSpan {
+	color: #9FC427;
+	font-weight: 900;
+}
+
 
 
 
@@ -487,6 +496,12 @@ body > div.parallax-window > div > p {
     position: absolute;
     top: 0;
     left: 50%
+	}
+	
+	.promo-section .promo-section-img-left {
+    position: absolute;
+    top: 0;
+    right: 50%;
   }
 
   .promo-section .ver-center {
@@ -978,7 +993,7 @@ body > div.parallax-window > div > p {
   height: 50px;
   font-size: 14px;
   font-weight: 400;
-  color: #a6a7aa;
+  color: #fff;
   background: #fafafa;
   border: none;
   box-shadow: none;
@@ -1290,8 +1305,8 @@ body > div.parallax-window > div > p {
 }
 
 .content-lg {
-  padding-top: 100px;
-  padding-bottom: 100px
+  padding-top: 50px;
+  padding-bottom: 50px
 }
 
 .parallax-content {

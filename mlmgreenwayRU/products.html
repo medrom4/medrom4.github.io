@@ -5,9 +5,26 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Продукция компании</title>
+	<title>Greenway - Продукция компании</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+		<!-- SEO -->
+		<meta name="description"
+		content="Продукция Greenway, делает Вашу жизнь лучше и проще! Экологически чистая, без химии, товары высшего качества - технология расщепленного микроволокна!">
+	<meta name="keywords"
+		content="Greenways,Greenway,гринвейбеларусь,гринвейминск,компания GreenWay купить продукцию,магазин GreenWay,Минск,Беларусь,Greenways офф сайт,Greenways оффициальный сайт,гринвей продукция купить рб,гринвей сайт беларусь,гринвей отзывы,григвей форум,гринвей лохотрон,AQUAmagic, Greenway блр, Гринвей блр, салфетки Гринвей в Беларуси, салфетки Аквамеджик, уборка без химии,уборка,салфетки,губки,каталог,стоимость,акции,недорого,AVITALL,Biofiber,Ecopam,Sharme,Sharme essential,Halthberry,Biotrim,AQUAMAGIC,Aquamatic,Revitall,iGen,TeaVitall">
+	<meta property="og:title" content="GreenWay | Продукция компании">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://mlmgreenway.ru/">
+	<meta property="og:site_name" content="mlmgreenway">
+	<meta property="og:image" content="http://mlmgreenway.ru/img/Greenways.png">
+	<meta property="og:site_name" content="mlmgreenway.ru">
+	<meta property="og:description"
+		content="Вся продукция, представленная на нашем сайте, сделана на основе новых формул, которые разрабатывались и тестировались опытными специалистами научного сектара.">
+	<meta itemprop="image" content="http://mlmgreenway.ru/img/Greenways.png">
+	<!-- /SEO -->
 
 	<!-- GLOBAL MANDATORY STYLES -->
 	<link rel="shortcut icon" href="img/Greenways.png" type="image/png">
@@ -235,7 +252,7 @@
 				</div>
 				<h4><a href="all/products-avitall.html">AVITALL</a> <span class="text-uppercase margin-l-20">Здоровье</span>
 				</h4>
-				<p>Палитра растворимых ягодных напитков.</p>
+				<p>Палитра растворимых коктейлей, для контроля аппетита.</p>
 				<a class="link" href="all/products-avitall.html">Посмотреть</a>
 			</div>
 			<!-- End Our Exceptional Solutions -->
@@ -350,15 +367,23 @@
 						<!-- End List -->
 					</div>
 
-					<div class="col-sm-6 sm-margin-b-30">
+					<form class="col-sm-6 sm-margin-b-30">
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Site Name">
+						<input type="hidden" name="admin_email" value="medikroma@gmail.com">
+						<input type="hidden" name="form_subject" value="Запрос на сотрудничество.">
+						<!-- END Hidden Required Fields -->
+
 						<h2 class="color-white">Запрос на сотрудничество</h2>
-						<input type="text" class="form-control footer-input margin-b-20" placeholder="Ваше имя" required>
-						<input type="email" class="form-control footer-input margin-b-20" placeholder="Почта" required>
-						<input type="text" class="form-control footer-input margin-b-20" placeholder="Телефон" required>
-						<textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Ваш текст"
-							required></textarea>
+						<input type="text" name="Имя" class="form-control footer-input margin-b-20" placeholder="Ваше имя" required>
+						<input type="text" name="E-mail" class="form-control footer-input margin-b-20" placeholder="Почта" required>
+						<input type="text" name="Телефон" class="form-control footer-input margin-b-20" placeholder="Телефон"
+							required>
+						<textarea name="Текстовое сообщение" class="form-control footer-input margin-b-30" rows="6"
+							placeholder="Ваш текст" required></textarea>
 						<button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Отправить</button>
-					</div>
+					</form>
 				</div>
 				<!--// end row -->
 			</div>
@@ -403,6 +428,7 @@
 	<script src="js/layout.min.js"></script>
 	<script src="js/components/swiper.min.js"></script>
 	<script src="js/components/wow.min.js"></script>
+	<script src="emailScript.js"></script>
 
 </body>
 <!-- END BODY -->
