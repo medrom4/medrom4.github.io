@@ -328,7 +328,7 @@ h6 {
 }
 
 .project1 {
-	background: url(/img/Screenshot_1.png) no-repeat 50% 50%;
+	background: url(../img/Screenshot_1.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -346,7 +346,7 @@ h6 {
 }
 
 .project2 {
-	background: url(/img/Screenshot_2.png) no-repeat 50% 50%;
+	background: url(../img/Screenshot_2.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -364,7 +364,7 @@ h6 {
 }
 
 .project3 {
-	background: url(/img/Screenshot_3.png) no-repeat 50% 50%;
+	background: url(../img/Screenshot_3.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -382,7 +382,7 @@ h6 {
 }
 
 .project4 {
-	background: url(/img/Screenshot_4.png) no-repeat 50% 50%;
+	background: url(../img/Screenshot_4.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -560,7 +560,7 @@ h6 {
 }
 
 .image {
-	background: url(../img/you.jpg) no-repeat 50% 47%;
+	background: url(../img/you.jpg) no-repeat 71% 45%;
 }
 
 
