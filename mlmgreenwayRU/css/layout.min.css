@@ -385,7 +385,7 @@ body>div.parallax-window>div>p {
 
 
 /**************************
-************ VIDEO *******
+************ VIDEO INDEX.HTML*******
 ***************************/
 .fullscreen-bg {
 	overflow: hidden;
@@ -436,11 +436,18 @@ body>div.parallax-window>div>p {
 		font-size: 23px;
 		margin-top: 30%;
 	}
-
-
 }
 
+/*********************************
+************ VIDEO FAQ.HTML*******
+**********************************/
 
+iframe {
+	display: block !important;
+	max-width: 100% !important;
+/* 	height: auto !important; */
+	vertical-align: middle !important;
+}
 
 
 
