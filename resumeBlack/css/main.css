@@ -16,6 +16,31 @@ body {
 	height: 100px;
 }
 
+a {
+	text-decoration: none !important;
+	color: #fff !important;
+}
+
+a:hover {
+	color: #fff !important;
+}
+
+a.ldn:hover {
+	color: #0077B5 !important;
+}
+
+a.fb:hover {
+	color: #fcaf45 !important;
+}
+
+a.vk:hover {
+	color: #55acee !important;
+}
+
+a.ins:hover {
+	color: #c4302b !important;
+}
+
 @media(max-width: 768px) {
 	.whitespace {
 		display: none;
@@ -350,6 +375,7 @@ h6 {
 	background-size: cover;
 }
 
+
 .project2::after {
 	content: "notorious.";
 	font-family: "Roboto Mono";
@@ -388,6 +414,79 @@ h6 {
 
 .project4::after {
 	content: "bones.";
+	font-family: "Roboto Mono";
+	font-size: 36px;
+	position: relative;
+	color: #fff;
+	display: block;
+	top: 10%;
+	left: 100%;
+	right: 0;
+	bottom: 0;
+}
+
+.project5 {
+	background: url(../img/Screenshot_5.png) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.project5::after {
+	content: "PAR.";
+	font-family: "Roboto Mono";
+	font-size: 36px;
+	position: relative;
+	color: #D7D2C7;
+	display: block;
+	top: 8%;
+	left: -23%;
+	right: 0;
+	bottom: 0;
+}
+
+.project6 {
+	background: url(../img/Screenshot_6.png) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.project6::after {
+	content: "photogirl.";
+	font-family: "Roboto Mono";
+	font-size: 36px;
+	position: relative;
+	color: #fff;
+	display: block;
+	top: 80%;
+	left: 95%;
+	right: 0;
+	bottom: 0;
+}
+
+
+.project7 {
+	background: url(../img/Screenshot_7.png) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.project7::after {
+	content: "click.";
+	font-family: "Roboto Mono";
+	font-size: 36px;
+	position: relative;
+	color: #fff;
+	display: block;
+	top: 80%;
+	left: -20%;
+	right: 0;
+	bottom: 0;
+}
+
+.project8 {
+	background: url(../img/Screenshot_8.png) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.project8::after {
+	content: "My life.";
 	font-family: "Roboto Mono";
 	font-size: 36px;
 	position: relative;
