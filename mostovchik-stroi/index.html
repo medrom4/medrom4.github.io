@@ -537,7 +537,7 @@
           </div>
           <div class="col-md-6 mr-auto order-2 order-md-1">
 
-            <h2 class="section-title mb-3">Свяжитесь с нами</h2>
+            <h2 class="section-title mb-3">Напишите нам!</h2>
             <p class="mb-5">Спасибо за Ваш интерес! Пожалуйста, заполните форму ниже, чтобы отправить нам вопрос или
               комментарий. Мы ответим Вам в ближайшее время.</p>
 
@@ -583,7 +583,11 @@
       </div>
     </div>
 
-
+    <div class="container-fluid">
+      <div class="row">
+        <div id="map"></div>
+      </div>
+    </div>
 
     <footer class="footer-section bg-light">
       <div class="container" id="contact-section">
@@ -621,6 +625,7 @@
 
         </div>
 
+
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <div class="border-top pt-5">
@@ -654,6 +659,7 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
 
   <script>
     $("body").on('click', '[href*="#contact-section-1"]', function (e) {
@@ -665,6 +671,8 @@
     });
   </script>
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnuLwB-CkIxGJP6VaDxp-ZriinfRrDJ1I&callback=initMap"
+    async defer></script>
 
 </body>
 

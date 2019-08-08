@@ -1062,7 +1062,7 @@ h5,
 }
 
 .site-section {
-  padding: 10em 0;
+  padding: 5em 0;
 }
 
 @media (max-width: 991.98px) {
@@ -1742,4 +1742,13 @@ h5,
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+/********************************************
+***************** MAP ****************
+********************************************/
+
+#map {
+  height: 400px;
+  width: 100%;
 }
